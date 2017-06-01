@@ -2,9 +2,19 @@
   width: 998px;
   margin: 0 auto; }
 
+body {
+  position: relative;
+  width: 100%; }
+
+.fudong {
+  position: fixed;
+  right: 20px;
+  bottom: 180px; }
+
 header {
   height: 80px;
-  background: #404040; }
+  background: #404040;
+  width: 100%; }
 
 header .header-l {
   float: left;
@@ -15,7 +25,8 @@ header .header-l img {
   height: 50px; }
 
 header .header-r {
-  float: right; }
+  float: right;
+  height: 80px; }
 
 header .header-r p {
   padding-left: 353px;
@@ -32,16 +43,82 @@ header .header-r ul {
 
 header .header-r ul li {
   float: left;
-  margin: 0 20px; }
+  margin: 0 20px;
+  position: relative; }
 
 header .header-r ul li a {
-  font: 14px/33px "";
+  font: 14px/42px "";
   color: #d7d7d7;
   float: left; }
 
-#banner {
-  position: relative;
-  width: 100%;
-  height: 356px; }
+header .header-r ul li .nav1 {
+  display: none;
+  width: 100px;
+  position: absolute;
+  top: 37px;
+  left: -21px;
+  border: 1px solid #D4D4D4;
+  background: #fff;
+  z-index: 999; }
 
-/*# sourceMappingURL=style.css.map */
+header .header-r ul li .nav1 li {
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid #D4D4D4;
+  text-align: center; }
+
+header .header-r ul li .nav1 li a {
+  width: 100%;
+  font: 12px/30px "";
+  color: #000;
+  text-align: center; }
+
+header .header-r ul li .nav1 li.te {
+  border-bottom: 0; }
+
+footer {
+  background: #404040;
+  height: 263px; }
+
+footer #footer {
+  padding-top: 34px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 5px; }
+
+footer #footer dl {
+  margin: 0 95px 0 20px;
+  float: left;
+  color: #d7d7d7; }
+
+footer #footer dl a {
+  color: #d7d7d7; }
+
+footer #footer dl a:hover {
+  color: hotpink; }
+
+footer #footer dl dt {
+  font-size: 18px;
+  text-align: center; }
+
+footer #footer dl dd {
+  font: 12px/30px "";
+  text-align: center; }
+
+footer #footer p {
+  float: right;
+  margin-right: 20px;
+  text-align: center; }
+
+footer #footer p img {
+  display: block;
+  width: 140px;
+  height: 140px; }
+
+footer #footer p span {
+  font: 16px/38px "";
+  color: #fff; }
+
+footer h3 {
+  font: 14px/34px "";
+  color: #fff;
+  text-align: center; }
