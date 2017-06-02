@@ -23,7 +23,7 @@
 						<li><a href="index.html">首页</a></li>
     					<li class="nav"><a href="#">订阅鲜花</a>
     						<ul class="nav1">
-        						<li><a href="#">缤纷设计</a></li>
+        						<li><a href="缤纷设计.html">缤纷设计</a></li>
             					<li><a href="#">玫瑰之约</a></li>
             					<li class="te"><a href="#">轻社甄选</a></li>
        						</ul>
@@ -57,7 +57,7 @@
 			<h3>一周一花 订阅未知的鲜美生活</h3>
 			<div id="subscription">
 				<p>
-					<img src="img/picture2017032901.jpg" />
+					<a href="缤纷设计.html"><img src="img/picture2017032901.jpg" /></a>
 					<span>缤纷设计</span>
 					<b>似锦繁华，五种不同的花材，缤纷多样</b>
 				</p>
@@ -117,27 +117,6 @@
 <script type="text/javascript" src="js/nav.js" ></script>
 <script type="text/javascript">
 $(function(){
-	$(".nav").mouseover(function(){
-          $(this.children).css({"display":"block"});
-        
-	})
-	/*$(".nav").mouseout(function(){
-          $(".nav"+" ul").css({"display":"none"});
-        
-	})*/
-	$(".nav"+" ul li a").mouseover(function(){
-			$(this).css({"color":"pink"});
-	})
-	$(".nav"+" ul li a").mouseout(function(){
-			$(this).css({"color":"#000"});
-	})
-		$(".nav"+" ul").mouseover(function(){
-			$(this).css({"display":"block"});
-	})
-	$(".nav"+" ul").mouseout(function(){
-			$(this).css({"display":"none"});
-	})
-	
 	new  Slideshow({
 		boxId:"#banner",
 		imgs:["img/banner2017032901.jpg","img/banner2017032902.jpg","img/banner20170523.jpg","img/slider2.jpg","img/slider5.jpg"],

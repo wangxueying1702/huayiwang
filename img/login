@@ -1,0 +1,1280 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>爱尚鲜花官网 - 登录</title>
+<meta name="author" content="Foam">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+
+
+  
+
+
+<META NAME="description" CONTENT="爱尚鲜花-互联网鲜花8年创业史，专注鲜花速递服务10年，旗下有周期订阅鲜花、礼品鲜花同城速递、绿植多肉等。目前正在全国多个大中城市建立鲜花工厂和冷库分仓，致力于给客户提供极佳鲜美生活。">
+<META NAME ="keywords" CONTENT="爱尚,爱尚鲜花,爱尚订阅鲜花,中国鲜花礼品网,鲜花,鲜花网,鲜花快递,网上订花送花,中国鲜花网,鲜花礼品,网上订花,送花网站">
+<link href="http://www.iishang.com:80/image/favicon.ico" type=image/x-icon rel="shortcut icon" />
+<link rel="stylesheet" href="http://www.iishang.com:80/css/style.css" type="text/css">
+
+<script type="text/javascript" src="http://static.iishang.com/portal/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="http://www.iishang.com:80/js/style.js"></script>
+
+<!--登陆注册页css-->
+<link rel="stylesheet" type="text/css" href="http://www.iishang.com:80/css/login.css" />
+<link rel="stylesheet" type="text/css" href="http://www.iishang.com:80/css/style.css" />
+<script type="text/javascript" src="http://www.iishang.com:80/js/jquery.min.js" ></script>
+<script type="text/javascript" src="http://www.iishang.com:80/js/style.js" ></script>
+<!--焦点图-->
+<script type="text/javascript" src="http://www.iishang.com:80//js/lrtk.js"></script>
+<script type="text/javascript" src="http://www.iishang.com:80//js/jquery.elastislide.js"></script>
+<script type="text/javascript" src="http://www.iishang.com:80//js/jquery.jslides.js"></script>
+
+<!-- 分页js，css -->
+<script type="text/javascript" src="http://www.iishang.com:80/js/jquery.pagination.js"></script>
+<link rel="stylesheet" href="http://www.iishang.com:80/css/pagination.css" />
+
+<!-- 头部开始 -->
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1eed1ce0d36ad955c9b9d6c330dfe0cf";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<!-- 头部开始 -->
+	<div class="header_new">
+    	<div class="head_new">
+            <div class="logo_new" style="margin-top: 5px">
+            	<a href="/"><img src="http://www.iishang.com:80/image/logo.png" height="50" /></a>
+            </div>
+            <div class="nav_new">
+            	<ul class="nav_top">
+					<li class="myas_li" id="center_li">
+						
+							
+					
+					</li>
+                    <li id="register_li">
+                    	
+  							
+						   
+						   		<a href="/login/register">注册</a>
+						   
+						
+                    </li>
+                	<li id="login_li">
+						
+  							
+						   
+						   		<a href="/login">登录</a>
+						   
+						
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <!-- 首页icon 开始 -->
+                <div class="navBar">
+                    <ul class="nav clearfix">
+                        <li class="m">
+                        <h3><a href="/" title="首页">首页</a></h3>
+                        </li>
+                        <li class="m">
+                        <h3><a href="javascript:void(0);">订阅鲜花</a></h3>
+                        	<ul class="sub">
+	                            <li><a href="/goods/8a28d0ca57e090580157e4f639d6260a">缤纷设计</a></li>
+	                            <li><a href="/goods/8a28d0ca57e090580157e5005064262b">玫瑰之约</a></li>
+	                            <li><a href="/goods/8a28d0ca5b1eb28e015b3cb948a90483">轻奢甄选</a></li>
+                        	</ul>
+                        </li>
+						<li class="m">
+							<h3><a href="javascript:void(0);">礼品鲜花</a></h3>
+							<ul class="sub">
+								<li><a href="/goods/8a28d0ca592f89b70159302b4a8c013c">极速达</a></li>
+								<li><a href="/goods/8a28d0ca5887502d01588b37c51f0258">永生玫瑰</a></li>
+								<li><a href="/goods/8a28d0ca5ab096f4015af0099fb618dd">经典玫瑰魔盒</a></li>
+								
+							</ul>
+						</li>
+						<li class="m">
+							<h3><a href="javascript:void(0);">绿植盆栽</a></h3>
+							<ul class="sub">
+								<li><a href="https://h5.youzan.com/v2/goods/3nmou1ng7iiq9?redirect_count=2" target="_blank">观赏植物</a></li>
+								<li><a href="https://h5.youzan.com/v2/goods/2ogftblqiirk1" target="_blank">吸水盆栽</a></li>
+							</ul>
+						</li>
+						<li class="m">
+							<h3><a href="javascript:void(0);">花边小物</a></h3>
+							<ul class="sub">
+								<li><a href="https://h5.youzan.com/v2/goods/3f2sojyxsjfqp" target="_blank">手机壳</a></li>
+							
+								<li><a href="/goods/8a28d0ca55b6c4af0155ba5a450e0081">花瓶</a></li>
+								
+							</ul>
+							</li>
+                    </ul>
+                </div>
+                <!-- 首页icon 结束 -->
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    
+    <!-- 微信公众号弹窗开始 -->
+    <div class="erwmpup">
+		<img src="http://www.iishang.com:80/image/qrcode_for_gh_63021c4b0949_1280.jpg" width="400"/>
+	</div>
+	<div id="foamzcc" onClick="erwmclose();"></div>
+	<!-- 微信公众号弹窗结束 -->
+	
+	
+<script type="text/javascript" src="http://www.iishang.com:80/js/SuperSlide.2.1.js"></script>
+<script src="http://www.iishang.com:80/js/zzsc.js" type="text/javascript"></script>
+<!-- 头部结束 -->
+<script>
+$(function(){
+	//头部我的爱尚客户服务
+		$(".nav_top").on("mouseover mouseout",".khfw_li",function(event){
+			 if(event.type == "mouseover"){
+			  //鼠标悬浮
+				 $(".khfw_ul").show();
+			 }else if(event.type == "mouseout"){
+			  //鼠标离开
+				 $(".khfw_ul").hide();
+			 }
+			});
+			
+		$(".nav_top").on("mouseover mouseout",".myas_li",function(event){
+			 if(event.type == "mouseover"){
+			  //鼠标悬浮
+				 $(".wdas_ul").show();
+			 }else if(event.type == "mouseout"){
+			  //鼠标离开
+				 $(".wdas_ul").hide();
+			 }
+			});
+			
+			//头部菜单二级菜单
+		$(".doshow_goodstype").hover(function(){
+			$(".shopgoods_typeul").css("display","block");
+		},function(){
+			$(".shopgoods_typeul").css("display","none");
+		});	
+});
+
+//加载logo(暂且弃用)
+function loadLogo(){
+	var url="http://www.iishang.com:80/home/loadLogo";
+	$.get(url,function(data){
+		$.each(data,function(i){
+			var html_1='<a href="/orderflower/c49afb1420634247b71c4654003f3bb8"><img src='+this.path+' width="220" /></a>';
+			$(".logo").html(html_1);
+		});
+	});
+}
+
+function toLogout(){
+	window.location.href="http://www.iishang.com:80/login/toLogout";
+}
+</script>
+
+
+
+
+
+
+
+<!-- Footer开始 -->
+ <div class="footer_new">
+    	<div class="foot_new">
+        	<div class="footlist_new">
+        		<div class="footlist_left">
+            	<div>
+                	<p>帮助中心</p>
+                    <ul>
+                        
+                            
+                        
+                        <li>
+                            <a href="/help/faq" target="_blank">常见问题</a>
+                        </li>
+                        
+                            
+                        
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                	<p>关于我们</p>
+                    <ul>
+                        <li>
+                            <a href="/about/about_us" target="_blank">公司简介</a>
+                        </li>
+                        <li>
+                            <a href="/about/news" target="_blank">新闻报道</a>
+                        </li>
+                        <li>
+                            <a href="/about/privacy_policy" target="_blank">隐私条款</a>
+                        </li>
+                        <li>
+                            <a href="/about/join_us" target="_blank">招贤纳士</a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                	<p>公司业务</p>
+                    <ul>
+                        <li>
+                            <a href="/company/cooperation" target="_blank">商务合作</a>
+                        </li>
+                        <li>
+                            <a href="/company/ka" target="_blank">大客户合作</a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div>
+                	<p>公司媒体</p>
+                    <ul>
+                        <li>
+                            <a href="http://weibo.com/iishang" target="_blank">新浪微博</a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            
+            <div class="footlist_right">
+                <div class="ftright_div">
+                     
+					  <img src="http://www.iishang.com:80/image/wx_ewm.jpg" />
+                      <div>微信公众号</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        <div class="clear"></div>
+        <div class="copyright_new">
+            	<ul>
+                    <li>Copyright © 2017 上海爱尚鲜花股份有限公司 保留所有权利</li>
+                    <li>ICP备案号： 沪ICP备15035988号-1</li>
+                </ul>
+                <div class="clear"></div>
+        </div>
+        </div>
+    </div>
+<!-- Footer结束 -->
+
+
+<script type="text/javascript" src="http://www.iishang.com:80/js/mobile.redirect.js"></script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://www.iishang.com:80/js/goog/base.js"></script>
+<script>
+    goog.require('goog.proto2.Message');
+</script>
+<script type="text/javascript" src="http://www.iishang.com:80/js/goog/phonemetadata.pb.js"></script>
+<script type="text/javascript" src="http://www.iishang.com:80/js/goog/phonenumber.pb.js"></script>
+<script type="text/javascript" src="http://www.iishang.com:80/js/goog/metadata.js"></script>
+<script type="text/javascript" src="http://www.iishang.com:80/js/goog/phonenumberutil.js"></script>
+<script type="text/javascript" src="http://www.iishang.com:80/js/goog/asyoutypeformatter.js"></script>
+<script type="text/javascript" src="http://www.iishang.com:80/js/goog/phoneUtil.js"></script>
+
+
+
+    <style>
+#playBox .oUlplay li{
+	height:100%;
+}
+.slideLeft{
+	height:320PX;
+}
+.qyyhzc{
+	text-decoration:underline;
+	color:#ae1232!important;
+}
+.logo_new{
+	margin-top:10px;	
+}
+.regist_btn span:hover {
+    background-color: #f3eef0;
+}
+.regist_btn span {
+    border: 1px solid #d7d7d7;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    color: #000;
+    padding: 12px 0;
+    outline: none;
+    cursor: pointer;
+    min-width: 104px;
+    display: inline-block;
+}
+.quzhuce_btn{
+    border: 1px solid #e43669 !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    background: #e43669 !important;
+    color: #fff !important;
+    padding: 12px 19px !important;
+    outline: none !important;
+    cursor: pointer !important;
+}
+.quzhuce_btn:hover{
+	background-color:#bb2e57 !important;
+}
+.backpsw_div{
+	display:none;
+}
+</style>
+</head>
+<body class="mainbody"> 
+   <div class="home_main">
+    	<div class="main_mid" style="max-width:1100px; padding-bottom:0; position:relative;">
+    		<img alt="爱尚鲜花" src="http://www.iishang.com:80/image/register_bg2.png" width="100%"/>
+            <!--验证码登录div-->
+            <div class="regist_div yzmlogin_div">
+            	<div class="regist_title">
+                	手机快速登录
+                </div>
+                <form class="regist_form yzm_form" action="">
+                	<span class="yzmerror_tip" id="err_yzm">您输入的验证码有误，请重新输入</span>
+                    <div class="regist_input">
+                        <div class="regyzm_left">
+                            <input type="text" value="" placeholder="请输入验证码" id="pic_code1" name=""/>
+                            <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        </div>
+                        <div class="regyzm_right">
+                            <div class=""><img
+                                    src=""
+                                    onclick="this.src='http://www.iishang.com:80/validate/getcode?d='+new Date()*1" width="90%" height="36px" id="generate_pic_code_login"/></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                	<div class="regist_input">
+                    	<div class="regyzm_left">
+                    		<input class="regist_yzminput" type="text" value="" maxlength="20" placeholder="请输入手机号"  id="phone_yzm" />
+                        	<span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        </div>
+                        <div class="regyzm_right">
+                        	<a href="javascript:;" class="sendyzm_btn yzmmsgs" >发送短信验证码</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="regist_input">
+                    	<input class="" type="text" value="" placeholder="请输入验证码" id="verificationCode_yzm"/>
+                        <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                    </div>
+                	<div class="login_tip">
+                        <div class="regist_tip"><a href="javascript:;"  class="paw_login change_pwdlogin" style="color:red">密码登录</a><a href="javascript:;" class="forget_psw">忘记密码</a></div>
+                    </div>
+                    <div class="regist_btn">
+                    	<span type="button" class="yzmerror_show" onclick="yzm_login()">登录</span>
+                    	<span type="button" class=" yzmerror_show" onclick="to_regist()">免费注册</span>
+                    </div>
+                </form>
+                <div class="regist_bottom" >
+                	<div class="other_login">
+                		微信扫码登录：<a href="javascript:;" class="pop_loginewm"><img alt="爱尚鲜花" src="http://www.iishang.com:80/image/icon_weixin.png" /></a>
+                    </div>
+                </div>
+            </div>	
+            <!--验证码登录div结束-->
+            <!--密码登录div-->
+            <div class="regist_div pwdlogin_div">
+            	<div class="regist_title">
+                	密码登录
+                </div>
+                <form class="regist_form mm_form" action="" id="form_pwd">
+                	<span class="yzmerror_tip" id="pwd_err">您输入的手机号和密码不匹配，请重新输入</span>
+                	<div class="regist_input">
+                	<input type="hidden" id="pwd_flag" name="puser.flag" value="0">
+                    	<input class="" id="pwd_phone" name="puser.phone" type="text" value="" maxlength="20" placeholder="请输入手机号" />
+                        <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                    </div>
+                	<div class="regist_input">
+                    	<input type="password" value="" placeholder="密码" id="pwd_pwd" name="puser.pwd"/>
+                        <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                    </div>
+                    <div class="state_yzmshow" style="display:none" id="div_code">
+                    	<div class="regyzm_left">
+                    		<input class="regist_yzminput" type="text" value="" placeholder="请输入验证码" id="pwd_code" name="puser.verificationCode" />
+                        	<span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        </div>
+                        <div class="regyzm_right">
+                            <div class=""><img
+                                    src=""
+                                    onclick="this.src='http://www.iishang.com:80/validate/getcode?d='+new Date()*1" width="90%" height="36px" id="generate_pic_code_login4pw"/></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                	<div class="login_tip">
+                        <div class="regist_tip"><a href="javascript:;"  class="paw_login change_yzmlogin">手机快速登录</a><a href="javascript:;" class="forget_psw">忘记密码</a></div>
+                    </div>
+                    <div class="regist_btn">
+                    	<span type="button" class="three_times_error" onclick="pwd_login()">登录</span>
+                    	<span type="button" class=" yzmerror_show" onclick="to_regist()">免费注册</span>
+                    </div>
+                </form>
+                <div class="regist_bottom">
+                	<div class="other_login">
+                        微信扫码登录：<a href="javascript:;" class="pop_loginewm"><img alt="爱尚鲜花" src="http://www.iishang.com:80/image/icon_weixin.png" /></a>
+                    </div>
+                </div>
+            </div>	
+            <!--密码登录div结束-->
+            <!--注册div-->
+            <div class="regist_div zhuce_div">
+            	<div class="regist_title">
+                	免费注册
+                </div>
+                <form class="regist_form zc_form" action="" id="form_register">
+                <span id="err_register" class="yzmerror_tip"></span>
+                    <div class="regist_input">
+                        <div class="regyzm_left">
+                            <input type="text" value="" placeholder="请输入验证码" id="pic_code" name=""/>
+                            <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        </div>
+                        <div class="regyzm_right">
+                            <div class=""><img
+                                    src=""
+                                    onclick="this.src='http://www.iishang.com:80/validate/getcode?d='+new Date()*1" width="90%" height="36px" id="generate_pic_code"/></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                	<div class="regist_input">
+                    	<div class="regyzm_left">
+                            <input type="text" value="" placeholder="请输入手机号" maxlength="20" id="phone_register" name="puser.phone"/>
+                        	<span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        </div>
+                        <div class="regyzm_right">
+                        	<a href="javascript:;" class="sendyzm_btn msgs">发送短信验证码</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="regist_input">
+                    <input class="regist_yzminput" type="text" value="" placeholder="请输入短信验证码" id="verificationCode" name="puser.verificationCode"/>
+                        <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                    </div>
+                	<div class="regist_input">
+                    	<input class="" type="password" value="" placeholder="密码" id="pwd_register" name="puser.pwd"/>
+                        <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        <div class="regist_tip"><a href="javascript:;"  class="paw_login change_yzmlogin">手机快速登录</a><a href="javascript:;" class="change_topwdlogin">已有账户,立即登录</a></div>
+                    </div>
+                    <div class="regist_btn">
+                    	<span type="button" onclick="toRegister()">注册</span>
+                    </div>
+                </form>
+                <div class="regist_bottom">
+                	<div class="other_login">
+                        微信扫码登录：<a href="javascript:;" class="pop_loginewm"><img alt="爱尚鲜花" src="http://www.iishang.com:80/image/icon_weixin.png" /></a>
+                    </div>
+                </div>
+            </div>	
+            <!--注册div结束--> 
+            <!--找回密码div-->
+            <div class="regist_div backpsw_div">
+            	<div class="regist_title">
+                	修改密码
+                </div>
+                <form class="regist_form zc_form" action="" id="form_findPwd">
+                <span id="err_findPwd" class="yzmerror_tip"></span>
+                    <div class="regist_input">
+                        <div class="regyzm_left">
+                            <input type="text" value="" placeholder="请输入验证码" id="pic_code_reset_pw" name=""/>
+                            <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        </div>
+                        <div class="regyzm_right">
+                            <div class=""><img
+                                    src=""
+                                    onclick="this.src='http://www.iishang.com:80/validate/getcode?d='+new Date()*1" width="90%" height="36px" id="generate_pic_code_reset_pw"/></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                	<div class="regist_input">
+                    	<div class="regyzm_left">
+                    	<input type="text" value="" maxlength="20" placeholder="请输入手机号" id="phone_findPwd" name="puser.phone"/>
+                        	<span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        </div>
+                        <div class="regyzm_right">
+                        	<a href="javascript:;" class="sendyzm_btn zhmmmsgs">发送短信验证码</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="regist_input">
+                    <input class="regist_yzminput" type="text" value="" placeholder="请输入验证码" id="code_findPwd" name="puser.verificationCode"/>
+                        <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                    </div>
+                	<div class="regist_input">
+                    	<input class="" type="password" value="" placeholder="请输入新密码" id="pwd_findPwd" name="puser.pwd"/>
+                        <span class="errorcha"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="errorpic"/></span>
+                        <div class="regist_tip"><a href="javascript:;"  class="paw_login change_yzmlogin">手机快速登录</a><a href="javascript:;" class="change_topwdlogin">已有账户,立即登录</a></div>
+                    </div>
+                    <div class="regist_btn">
+                    	<span type="button" onclick="toFindPwd()">完成</span>
+                    </div>
+                </form>
+                <div class="regist_bottom">
+                	<div class="other_login">
+                        微信扫码登录：<a href="javascript:;" class="pop_loginewm"><img alt="爱尚鲜花" src="http://www.iishang.com:80/image/icon_weixin.png" /></a>
+                    </div>
+                </div>
+            </div>	
+            <!--找回密码div结束-->
+        </div>
+    </div>
+
+<div class="login_ewmshow">
+ 	<div class="login_ewmclose">
+    	<a href="javascript:;"><img src="http://www.iishang.com:80/image/icon_close.png" alt="爱尚鲜花" class="close_ewmlogin" /></a>
+    </div>
+    <div class="login_ewmpic">
+    	<img src="http://www.iishang.com:80/image/login_wxewm.png" alt="爱尚鲜花" />
+    </div>
+    <div class="login_ewmtxt">
+    	微信扫码登录
+    </div>
+ </div>
+<div class="zzc"></div>
+<script type="text/javascript">
+$(".errorcha").click(function(){
+	$(this).prev().val("").removeClass("errorinput_border");
+	$(this).hide();
+});
+
+function modalhide1(){
+	$("#foamModal1,.zzc").hide();
+	$("#loadingTupian").hide();
+	$("#falseShow").hide();
+};
+</script>
+	<!-- 验证码弹窗结束 -->
+<script type="text/javascript">
+var phtest = /^(13[0-9]|14[0-9]|15[0-9]|17[0-9]|18[0-9])\d{8}$/;//手机格式验证
+var etest = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+var pwdtest=/^[\\w]{6,12}$/;
+
+var sendMobile;
+var sendCode;
+var code1;
+var code2;
+var code3;
+var count=0;
+var msgs_1=true;
+var msgs_2=true;
+var msgs_3=true;
+
+$("#pwd_pwd").keyup(function(){
+        if(event.keyCode == 13){
+        pwd_login();
+        }
+    });
+    $("#verificationCode_yzm").keyup(function(){
+        if(event.keyCode == 13){
+        yzm_login();
+        }
+    });
+    
+    
+
+$(function() {
+	//替换appid
+	var openWeixinAppid = "wx308f58ea6f5eac14";
+	var callbackUri = "http://www.iishang.com:80/wechat/callback.do";
+	if(callbackUri.indexOf(':80/')>-1){
+		callbackUri = callbackUri.replace(':80/','/');
+	}
+	callbackUri = encodeURIComponent(callbackUri);
+	var openWeixinUrl = "https://open.weixin.qq.com/connect/qrconnect?appid=appidParam&redirect_uri=callbackUri&response_type=code&scope=snsapi_login&state=#wechat_redirect";
+	openWeixinUrl = openWeixinUrl.replace("appidParam",openWeixinAppid);
+	openWeixinUrl = openWeixinUrl.replace("callbackUri",callbackUri);
+	//替换微信登录url
+	$('.pop_loginewm').attr('href',openWeixinUrl);
+	//
+
+	if(''){
+		$(".change_zhuce").click();
+        $("#generate_pic_code").trigger("click");
+	}else{
+		$(".change_pwdlogin").click();
+        $("#generate_pic_code_reset_pw").trigger("click");
+	}
+
+	if(typeof(errorinfo) !='undefined' && errorinfo!=null && errorinfo !='' && errorinfo !='null'){
+		$("#login_errorMsg_span").html(errorinfo);
+		$("#login_errorMsg").css("display","");
+	}
+	getMsg();
+});
+
+//获取短信验证码
+function getMsg(){ 
+	$(".msgs").click(function() {
+	$("#err_register").html("");
+		$("#err_register").css("display","none");
+	var Foamtime = true;
+	var phone = $("#phone_register").val();
+	if(phone==''||phone==null){
+		$("#err_register").html("手机号码不可为空！");
+		$("#err_register").css("display","block");
+		Foamtime=false;
+		return;
+	}
+	if(!validatePhone(phone)){
+		$("#err_register").html("手机号格式不正确！");
+		$("#err_register").css("display","block");
+		Foamtime=false;
+		return;
+	}
+		 code1 = $(this);
+		if (Foamtime) {
+			Foamtime = false;
+			//验证改手机号是否注册
+			getCodeHandler();
+		
+				}
+	});
+	
+	
+	$(".zhmmmsgs").click(function() {
+	$("#err_findPwd").html("");
+		$("#err_findPwd").css("display","none");
+	var Foamtime = true;
+	var phone = $("#phone_findPwd").val();
+	if(phone==''||phone==null){
+		$("#err_findPwd").html("手机号码不可为空！");
+		$("#err_findPwd").css("display","block");
+		Foamtime=false;
+		return;
+	}
+	if(!validatePhone(phone)){
+		$("#err_findPwd").html("手机号格式不正确！");
+		$("#err_findPwd").css("display","block");
+		Foamtime=false;
+		return;
+	}
+		 code3 = $(this);
+		if (Foamtime) {
+
+			Foamtime = false;
+			//验证改手机号是否注册
+			getCodeHandler3();
+		
+				}
+	});
+}
+
+$(function () {
+//		changeCode();
+		//获取短信验证码
+		$(".yzmmsgs").click (function () {
+		$("#err_yzm").html("");
+		$("#err_yzm").css("display","none");
+	var Foamtime = true;
+	var phone = $("#phone_yzm").val();
+	if(phone==''||phone==null){
+		$("#err_yzm").html("手机号码不可为空！");
+		$("#err_yzm").css("display","block");
+		Foamtime=false;
+		return;
+	}
+	if(!validatePhone(phone)){
+		$("#err_yzm").html("手机号码格式不正确！");
+		$("#err_yzm").css("display","block");
+		Foamtime=false;
+		return;
+	}
+		 code2 = $(this);
+		if (Foamtime) {
+			Foamtime = false;
+			//验证改手机号是否注册
+			getCodeHandler2();
+		
+				}
+		
+		});
+			});
+//验证码登录验证手机是否存在
+function getCodeHandler2() {
+			var phone = $("#phone_yzm").val();
+    var pic_code = $("#pic_code1").val();
+    console.log("code"+pic_code)
+    if(pic_code == null || pic_code == undefined ||pic_code.trim() == ""){
+        $("#err_yzm").html("请输入验证码！");
+        $("#err_yzm").css("display","block");
+        return;
+    }
+// 			var url_code = "http://www.iishang.com:80/login/"+phone;
+// 				$.get(url_code, function(data) {//判断该号码是否已经被注册过
+// 					if (!data) {
+						sendMsg2(phone,pic_code);
+// 					} else {
+// 						$("#err_yzm").html("该手机号尚未注册！");
+// 						$("#err_yzm").css("display","block");
+// 					}
+// 				});
+		}
+
+//验证码登录验证手机是否存在
+function getCodeHandler3() {
+			var phone = $("#phone_findPwd").val();
+            var pic_code = $("#pic_code_reset_pw").val();
+            if(pic_code == null || pic_code == undefined ||pic_code.trim() == ""){
+                $("#err_findPwd").html("请输入验证码！");
+                $("#err_findPwd").css("display","block");
+                return;
+            }
+            phone = parsePhone(phone);
+			var url_code = "http://www.iishang.com:80/login/"+phone;
+				$.get(url_code, function(data) {//判断该号码是否已经被注册过
+					if (!data) {
+
+						sendMsg3(phone,pic_code);
+					} else {
+						$("#err_findPwd").html("该手机号尚未注册！");
+						$("#err_findPwd").css("display","block");
+					}
+				});
+		}
+
+
+function getCodeHandler() {
+			var phone = $("#phone_register").val();
+            var pic_code = $("#pic_code").val();
+            if(pic_code == null || pic_code == undefined ||pic_code.trim() == ""){
+                $("#err_register").html("请输入验证码！");
+                $("#err_register").css("display","block");
+                return;
+            }
+// 			var url_code = "http://www.iishang.com:80/login/"+phone;
+// 				$.get(url_code, function(data) {//判断该号码是否已经被注册过
+// 					if (data) {
+						sendMsg(phone,pic_code);
+// 					} else {
+// 						$("#err_register").html("该手机号已被注册！");
+// 						$("#err_register").css("display","block");
+// 					}
+// 				});
+		}
+		
+		//发送验证码
+		function sendMsg(phone,code) {
+			var url_send='';
+//			if (validatePhone(phone)){
+//                phone = parsePhone(phone);
+				url_send = "http://www.iishang.com:80/login/foolish/sendMsgForReg/"+ phone +"?code="+code;
+//			}else{
+			//提示账号输入错误
+//			$("#err_register").html(" 手机号码格式不正确！");
+//			$("#err_register").css("display","block");
+//				return;
+//			}
+
+			if(msgs_1){
+				$.get(url_send, function(data){
+//					sendMobile = data.phone;
+                    if(data==0) {
+                        code1.addClass("msgs1");
+                        msgs_1 = false;
+                        var time = 60;
+                        var t = setInterval(function () {
+                            time--;
+                            code1.html(time + "秒");
+                            if (time == 0) {
+                                clearInterval(t);
+                                code1.html("重新获取");
+                                msgs_1 = true;
+                                code1.removeClass("msgs1");
+                            }
+                        }, 1000);
+                    }else if(data ==1){
+                        $("#err_register").html("该手机号已经被注册");
+                        $("#err_register").css("display","block");
+                        $("#generate_pic_code").trigger("click");
+                    }else if(data ==2){
+                        $("#err_register").html("图形验证码错误！");
+                        $("#err_register").css("display","block");
+                        $("#generate_pic_code").trigger("click");
+                    }
+				});
+			}
+		}
+
+	//发送验证码
+		function sendMsg2(phone,pic_code) {
+			var url_send='';
+//			if (validatePhone(phone)){
+//                phone = parsePhone(phone);
+				url_send = "http://www.iishang.com:80/login/sendMsg/"+phone+"?code="+pic_code;
+//			}else{
+			//提示账号输入错误
+//			$("#err_yzm").html(" ！");
+//			$("#err_yzm").css("display","block");
+//				return;
+//			}
+			
+			if(msgs_2){
+				$.get(url_send, function(data){
+				    if(data) {
+                        sendMobile = data.phone;
+                        code2.addClass("msgs2");
+                        msgs_2 = false;
+                        var time = 60;
+                        var t = setInterval(function () {
+                            time--;
+                            code2.html(time + "秒");
+                            if (time == 0) {
+                                clearInterval(t);
+                                code2.html("重新获取");
+                                msgs_2 = true;
+                                code2.removeClass("msgs2");
+                            }
+                        }, 1000);
+                    }else{
+                        $("#err_yzm").html("图形验证码错误！");
+                        $("#err_yzm").css("display","block");
+                        $("#generate_pic_code_login").trigger("click");
+                    }
+				});
+			}
+		}
+		
+			//发送验证码
+		function sendMsg3(phone,code) {
+			var url_send='';
+//			if (validatePhone(phone)){
+//                phone = parsePhone(phone);
+				url_send = "http://www.iishang.com:80/login/sendMsg/"+phone+"?code="+code;
+//			}else{
+			//提示账号输入错误
+//			$("#err_findPwd").html("手机号码格式不正确 ！");
+//			$("#err_findPwd").css("display","block");
+//				return;
+//			}
+			if(msgs_3){
+				$.get(url_send, function(data){
+//					sendMobile = data.phone;
+                    if(data) {
+                        code3.addClass("msgs3");
+                        msgs_3 = false;
+                        var time = 60;
+                        var t = setInterval(function () {
+                            time--;
+                            code3.html(time + "秒");
+                            if (time == 0) {
+                                clearInterval(t);
+                                code3.html("重新获取");
+                                msgs_3 = true;
+                                code3.removeClass("msgs3");
+                            }
+                        }, 1000);
+                    }else {
+                        $("#err_findPwd").html("图形验证码错误！");
+                        $("#err_findPwd").css("display","block");
+                        $("#generate_pic_code_reset_pw").trigger("click");
+                    }
+				});
+			}
+		}
+
+function pwd_login(){
+	var phone=$("#pwd_phone").val();
+    phone = parsePhone(phone);
+	var pwd=$("#pwd_pwd").val();
+	var staCode=$("#pwd_code").val();
+    console.log("code:"+staCode +":"+count);
+	var newCode=$("#pwd_newCode").html();
+	$("#pwd_err").html("");
+	$("#pwd_flag").val(0);
+	if(phone==''||phone==null){
+		$("#pwd_err").html("手机号不能为空！");
+		$("#pwd_err").css("display","block");
+		$("#pwd_flag").val(1);
+        return;
+	}
+    else
+	if((staCode==''||staCode==null) && count>=3){
+		$("#pwd_err").html("请输入验证码！");
+		$("#pwd_err").css("display","block");
+		$("#pwd_flag").val(1);
+        return;
+	}else 
+	if(pwd==''||pwd==null){
+		$("#pwd_err").html("密码不能为空！");
+		$("#pwd_err").css("display","block");
+		$("#pwd_flag").val(1);
+        return;
+	}else 
+//	if(staCode!=null&&staCode!=""&&count>=3&&(newCode.toLowerCase()!=staCode.toLowerCase())){
+//		$("#pwd_err").html("请输入正确的短信验证码！");
+//		$("#pwd_err").css("display","block");
+//		$("#pwd_flag").val(1);
+//	}
+	
+	var url="http://www.iishang.com:80/login/pwd";
+	$.ajax({
+		type:"POST",
+		url:url,
+		async: false,
+		data:$("#form_pwd").serialize(),
+		dataType:"json",
+		success:function(data){
+			if(data.loginFlag=="success"){
+				window.location.href="http://www.iishang.com:80/login/loginSuccess";
+			}else if(data.loginFlag=="flagfalse"){
+ 				$("#pwd_err").html(data.errorinfo);
+ 				$("#pwd_err").css("display","block");
+			}else{
+			$("#pwd_err").html(data.errorinfo);
+				$("#pwd_err").css("display","block");
+			}
+			count=data.count;
+			if(count>=3){
+			$("#div_code").show();
+			$("#pwd_code").val("");
+			changeCode();
+			}else{
+			$("#div_code").hide();
+			}
+		},
+		error:function(){
+			$("#pwd_err").html("出错啦，请稍后重试或联系客服");
+			$("#pwd_err").css("display","block");
+		}
+	});
+}
+
+function toRegister(){
+	var url="http://www.iishang.com:80/login/doRegister";
+	var phone = $("#phone_register").val();
+    phone = parsePhone(phone);
+	var verificationCode = $("#verificationCode").val();
+	var pwd = $("#pwd_register").val();
+	pwd=pwd.trim();
+	if(phone==''||phone==null){
+		$("#err_register").html("手机号码不能为空！");
+		$("#err_register").css("display","block");
+	}else if(verificationCode==''||verificationCode==null){
+		$("#err_register").html("请输入短信验证码！");
+		$("#err_register").css("display","block");
+	}else if(pwd==''||pwd==null){
+		$("#err_register").html("密码不能为空！");
+		$("#err_register").css("display","block");
+	}else if(pwd.length<6||pwd.length>16){
+		$("#err_register").html("密码长度为6-16位！");
+		$("#err_register").css("display","block");
+	}
+	else{
+		$.post(url,$("#form_register").serialize(),function(data){
+				if(data.flag=="success"){
+					window.location.href="http://www.iishang.com:80/login/loginSuccess";
+				}else if(data.flag=="fail"){
+					$("#err_register").html(data.msg);
+					$("#err_register").css("display","block");
+					
+// 					$(".regist_btn").css("background","#313131").val("注册");
+// 					$(".regist_btn").attr("disabled",false);
+				}else if(data.flag=="codeFalse"){
+					$("#err_register").html("请输入正确的短信验证码");
+					$("#err_register").css("display","block");
+// 					$(".regist_btn").css("background","#313131").val("注册");
+// 					$(".regist_btn").attr("disabled",false);
+				}
+		});
+	}
+}
+
+function toFindPwd(){
+	var url="http://www.iishang.com:80/login/doRegister";
+	var phone = $("#phone_findPwd").val();
+    phone = parsePhone(phone);
+	var verificationCode = $("#code_findPwd").val();
+	var pwd = $("#pwd_findPwd").val();
+	pwd=pwd.trim();
+	if(phone==''||phone==null){
+		$("#err_findPwd").html("手机号码不能为空！");
+		$("#err_findPwd").css("display","block");
+	}else if(verificationCode==''||verificationCode==null){
+		$("#err_findPwd").html("请输入验证码！");
+		$("#err_findPwd").css("display","block");
+	}else if(pwd==''||pwd==null){
+		$("#err_findPwd").html("密码不能为空！");
+		$("#err_findPwd").css("display","block");
+	}else if(pwd.length<6||pwd.length>16){
+		$("#err_findPwd").html("密码长度6-16位！");
+		$("#err_findPwd").css("display","block");
+	}
+	else{
+		$.ajax({
+			type:"POST",
+			url:url,
+			data:$("#form_findPwd").serialize(),
+			dataType:"json",
+			beforeSend:function(){
+// 				$(".regist_btn").css("background","#999").val("注册中......");
+// 				$(".regist_btn").attr("disabled", true);
+			},
+			success:function(data){
+				if(data.flag=="success"){
+					window.location.href="http://www.iishang.com:80/login/loginSuccess";
+				}else if(data.flag=="fail"){
+					$("#err_findPwd").html(data.msg);
+					$("#err_findPwd").css("display","block");
+					
+// 					$(".regist_btn").css("background","#313131").val("注册");
+// 					$(".regist_btn").attr("disabled",false);
+				}else if(data.flag=="codeFalse"){
+					$("#err_findPwd").html("请输入正确的短信验证码");
+					$("#err_findPwd").css("display","block");
+// 					$(".regist_btn").css("background","#313131").val("注册");
+// 					$(".regist_btn").attr("disabled",false);
+				}
+                else if(data.flag=="codeFalseTime")
+                {
+                    $("#err_findPwd").html("验证码已超时");
+                    $("#err_findPwd").css("display","block");
+                }
+			}
+		});
+	}
+}
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        var abc = "";
+        if (abc == "true") {
+            to_regist();
+        }
+    });
+
+function forgetPwd(){
+	window.location.href="http://www.iishang.com:80/login/forgetPwd/";
+}
+
+function EuRegister(){
+window.location.href="http://www.iishang.com:80//user/toCompanyLogin.action";
+}
+
+function qhlogin(){
+$('#switch_login').removeClass("switch_btn").addClass('switch_btn_focus');
+		$('#switch_qlogin').removeClass("switch_btn_focus").addClass('switch_btn');
+		$('#switch_bottom').animate({left:'50%',width:'50%'});
+		$('#qlogin').css('display','block');
+		$('#web_qr_login').css('display','none');
+
+}
+
+function qhQlogin(){
+$('#switch_login').removeClass("switch_btn_focus").addClass('switch_btn');
+		$('#switch_qlogin').removeClass("switch_btn").addClass('switch_btn_focus');
+		$('#switch_bottom').animate({left:'0px',width:'50%'});
+		$('#qlogin').css('display','none');
+		$('#web_qr_login').css('display','block');
+}
+</script>
+
+<script>
+
+	//登录注册方式
+	//密码登录
+	$(".change_pwdlogin").click(function(){
+		$(".yzmlogin_div,.zhuce_div,.backpsw_div").hide();
+		$(".pwdlogin_div").show();	
+	});
+	//注册
+	$(".change_zhuce").click(function(){
+		$(".yzmlogin_div,.pwdlogin_div,.backpsw_div").hide();
+		$("#err_info").css("display","none");
+		$("#div_yzm").css("display","none");
+		$(".zhuce_div").show();
+        console.log("获取")
+        $("#generate_pic_code").trigger("click");
+	});
+	//验证码登录
+	$(".change_yzmlogin").click(function(){
+		$(".pwdlogin_div,.zhuce_div,.backpsw_div").hide();
+		$(".yzmlogin_div").show();
+        $("#generate_pic_code_login").trigger("click");
+	});
+	//注册页转到密码登录
+	$(".change_topwdlogin").click(function(){
+		$(".yzmlogin_div,.zhuce_div,.backpsw_div").hide();
+		$(".pwdlogin_div").show();	
+		$("#err_info").css("display","none");
+		$("#div_yzm").css("display","none");
+	});
+	//忘记密码
+	$(".forget_psw").click(function(){
+		$(".yzmlogin_div,.zhuce_div,.pwdlogin_div").hide();
+		$(".backpsw_div").show();
+        $("#generate_pic_code_reset_pw").trigger("click");
+	});
+	function to_regist(){
+		$(".yzmlogin_div,.pwdlogin_div,.backpsw_div").hide();
+		$(".zhuce_div").show();
+        $("#generate_pic_code").trigger("click");
+	};
+
+//验证码登录
+function yzm_login(){
+var Foamtime=true;
+$("#err_yzm").html("");
+var phone=$("#phone_yzm").val();
+
+var code=$("#verificationCode_yzm").val();
+if(phone==''||phone==null){
+		$("#err_yzm").html("手机号码不可为空！");
+		$("#err_yzm").css("display","block");
+		Foamtime=false;
+		return;
+	}
+if(!validatePhone(phone)){
+		$("#err_yzm").html("手机号码格式不正确！");
+		$("#err_yzm").css("display","block");
+		Foamtime=false;
+		return;
+	}
+if(code==''||code==null){
+		$("#err_yzm").html("验证码不正确！");
+		$("#err_yzm").css("display","block");
+		Foamtime=false;
+		return;	
+}
+if(Foamtime){
+    phone = parsePhone(phone);
+var url="http://www.iishang.com:80/login/"+phone+"/code_"+code;
+	$.ajax({
+		type:"POST",
+		url:url,
+		dataType:"json",
+		success:function(data){
+			if(data.loginFlag=="success"){
+				window.location.href="http://www.iishang.com:80/login/loginSuccess";
+			}else{
+				$("#err_yzm").html(data.errorinfo);
+				$("#err_yzm").css("display","block");
+			}
+		},
+		error:function(){
+			$("#err_yzm").html("出错啦，请稍后重试或联系客服");
+			$("#err_yzm").css("display","block");
+		}
+	});
+
+}
+}
+
+//静态验证码
+function changeCode(){
+    $("#generate_pic_code_login4pw").trigger("click");
+}
+
+</script>
+
+
+	
+	
+		
+		
+	
+	
+	
+		
+		
+			
+		
+	
+
+
+	
+	
+		
+		
+	
+	
+		
+		
+	
+
+	
+		
+		
+			
+		
+	
+
+
+
+
+<div class="bkhome">
+    
+    
+    <a href="#" onclick="NTKF.im_openInPageChat('kf_9412_1474855760539')">
+        <img id="img_kf" src="http://www.iishang.com:80/image/kf.png" width="100%">
+    </a>
+</div>
+
+<script type="text/javascript">
+    $("#img_kf").mouseenter(function () {
+        $(this).attr("src","http://www.iishang.com:80/image/kf2.png");
+    })
+
+    $("#img_kf").mouseleave(function () {
+        $(this).attr("src","http://www.iishang.com:80/image/kf.png");
+    })
+
+</script>
+
+
+
+<script type="text/javascript">
+    NTKF_PARAM = {
+        siteid:"kf_9412",		            //ä¼ä¸IDï¼ä¸ºåºå®å¼ï¼å¿å¡«
+        settingid:"kf_9412_1474855760539",	//æ¥å¾ç»IDï¼ä¸ºåºå®å¼ï¼å¿å¡«
+        uid:"",		                //ç¨æ·IDï¼æªç»å½å¯ä»¥ä¸ºç©ºï¼ä½ä¸è½ç»nullï¼uidèµäºçå¼æ¾ç¤ºå°å°è½å®¢æ·ç«¯ä¸
+        uname:"",		    //ç¨æ·åï¼æªç»å½å¯ä»¥ä¸ºç©ºï¼ä½ä¸è½ç»nullï¼unameèµäºçå¼æ¾ç¤ºå°å°è½å®¢æ·ç«¯ä¸
+        isvip:"0",                          //æ¯å¦ä¸ºvipç¨æ·ï¼0ä»£è¡¨éä¼åï¼1ä»£è¡¨ä¼åï¼åå¼æ¾ç¤ºå°å°è½å®¢æ·ç«¯ä¸
+        userlevel:"1",		                //ç½ç«èªå®ä¹ä¼åçº§å«ï¼0-Nï¼å¯æ ¹æ®éæ©å¤æ­ï¼åå¼æ¾ç¤ºå°å°è½å®¢æ·ç«¯ä¸
+        erpparam:""                      //erpparamä¸ºerpåè½çæ©å±å­æ®µï¼å¯éï¼è´­ä¹°erpåè½åç¨äºerpåè½éæ
+    }
+
+    console.log(NTKF_PARAM);
+
+</script>
+<script type="text/javascript" src="https://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9412" charset="utf-8"></script>
+
+
+
+
+</body>
+</html>
