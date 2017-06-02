@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/user.css" />
+	</head>
+	<body>
+		<header>
+			<div class="margin">
+				<div class="header-l">
+					<img src="img/logo.png" />
+				</div>
+				<div class="header-r">
+					<p class="login">
+						<a href="#">登录</a>
+						<span>|</span>
+						<a href="#">注册</a>
+					</p>
+					<ul class="clear">
+						<li><a href="index.html">首页</a></li>
+    					<li class="nav"><a href="#">订阅鲜花</a>
+    						<ul class="nav1">
+        						<li><a href="缤纷设计.html">缤纷设计</a></li>
+            					<li><a href="#">玫瑰之约</a></li>
+            					<li class="te"><a href="#">轻社甄选</a></li>
+       						</ul>
+    					</li>
+						<li class="nav"><a href="#">礼品鲜花</a>
+							<ul class="nav1">
+        						<li><a href="#">极速达</a></li>
+            					<li><a href="#">永生玫瑰</a></li>
+            					<li class="te"><a href="#">经典玫瑰魔盒</a></li>
+       						</ul>
+						</li>
+						<li class="nav"><a href="#">绿植盆栽</a>
+							<ul class="nav1">
+        						<li><a href="#">观赏植物</a></li>
+            					<li class="te"><a href="#">吸水盆栽</a></li>
+       						</ul>
+						</li>
+						<li class="nav"><a href="#">花边小物</a>
+							<ul class="nav1">
+        						<li><a href="#">手机壳</a></li>
+            					<li class="te"><a href="#">花瓶</a></li>
+       						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section id="userbanner" class="margin">
+			<div id="login" class="clear">
+				<h3>密 码 登 录</h3>
+				<input type="text" placeholder="请输入手机号" class="number" /><br />
+				<b class="tishi"></b>
+				<input type="text" placeholder="请输入密码" /><br />
+				<a href="#" class="kuaisu">手机快速登录</a>
+				<a href="#" class="mima">忘记密码？</a><br />
+				<a href="user.html" class="sumb">登录</a>
+				<a href="#" class="but">注册</a>
+				<p class="weixin">
+					<b>微信扫码登录：</b>
+					<a href="#"><img src="img/icon_weixin.png" /></a>
+				</p>
+			</div>
+			<div id="register" class="clear">
+				<h3>免 费 注 册</h3>
+				<input type="text" placeholder="请输入验证码" class="verify"/><s id="showCode" ></s><u onclick="testF()" style="font-size:12px;cursor:pointer;">换一张？</u><br/>
+					
+				<br />
+				<input type="text" placeholder="请输入手机号" class="number"/><span>发送短信验证码</span><br />
+				<b class="tishi"></b><br />
+				<input type="text" placeholder="请输入短信验证码" /><br />
+				<input type="text" placeholder="密码" /><br />
+				<a class="kuaisu">手机快速登录</a>
+				<a class="zhanghao">已有账户，立即登录</a><br />
+				<a id="but">注册</a>
+				<p class="weixin">
+					<b>微信扫码登录：</b>
+					<a href="#"><img src="img/icon_weixin.png" /></a>
+				</p>
+			</div>
+			<div id="phone" class="clear">
+				<h3>手 机 快 速 登 录</h3>
+				<input type="text" placeholder="请输入验证码" class="verify"/><s id="showCode1" ></s><u onclick="testF()" style="font-size:12px;cursor:pointer;">换一张？</u><br />
+				<input type="text" placeholder="请输入手机号" class="number"/><span>发送短信验证码</span><br />
+				<b class="tishi"></b><br />
+				<input type="text" placeholder="请输入短信验证码" /><br />
+				<a class="pass">密码登录</a>
+				<a class="mima">忘记密码？</a><br />
+				<a href="#" class="sumb">登录</a>
+				<a class="but">注册</a>
+				<p class="weixin">
+					<b>微信扫码登录：</b>
+					<a href="#"><img src="img/icon_weixin.png" /></a>
+				</p>
+			</div>
+			<div id="xiugai" class="clear">
+				<h3>修 改 密 码</h3>
+				<input type="text" placeholder="请输入验证码" class="verify"/><s id="showCode2" ></s><u onclick="testF()" style="font-size:12px;cursor:pointer;">换一张？</u><br />
+				<input type="text" placeholder="请输入手机号" class="number"/><span onclick="phone()">发送短信验证码</span><br />
+				<b class="tishi"></b><br />
+				<input type="text" placeholder="请输入短信验证码" /><br />
+				<input type="text" placeholder="请输入新密码" /><br />
+				<a class="kuaisu">手机快速登录</a>
+				<a class="zhanghao">已有账户，立即登录</a><br />
+				<a id="but1">完成</a>
+				<p class="weixin">
+					<b>微信扫码登录：</b>
+					<a href="#"><img src="img/icon_weixin.png" /></a>
+				</p>
+			</div>
+		</section>
+		<footer>
+			<div class="margin clear" id="footer">
+				<dl>
+                    <dt><a href="#">帮助中心</a></dt>
+                    <dd><a href="#">常见问题</a></dd>
+                </dl>
+    			<dl>
+    				<dt><a href="#">关于我们</a></dt>
+        			<dd><a href="#">公司简介</a></dd>
+        			<dd><a href="#">新闻报道</a></dd>
+        			<dd><a href="#">隐私条款</a></dd>
+        			<dd><a href="#">招贤纳士</a></dd>
+    			</dl>
+    			<dl>
+    				<dt><a href="#">公司业务</a></dt>
+        			<dd><a href="#">商务合作</a></dd>
+        			<dd><a href="#">大客户合作</a></dd>
+    			</dl>
+    			<dl>
+    				<dt><a href="#">公司媒体</a></dt>
+        			<dd><a href="#">新浪微博</a></dd>
+    			</dl>
+    			 <p>
+    				<img src="img/qrcode_for_gh_63021c4b0949_1280.jpg" />
+    				<span>微信公众号</span>
+    			</p>
+    		</div>
+    		 <h3>CopyRight &copy;2017 花艺网股份有限公司  &nbsp; 保留所有版权&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPC备案号：陕ICP备1111111号-01</h3>
+		</footer>
+		<div class="fudong">
+			<img src="img/kf.png" />
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/nav.js" ></script>
+<script type="text/javascript" src="js/login.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		testF();
+})
+$(".number").blur(function(){
+	let reg=/^1\d{10}$/;
+		if(!reg.test($(".number").val())){
+			$(".tishi").html("手机号有误");
+		}
+		if($(".number").val()==""){
+			$(".tishi").html(" ");
+		}
+})
+$(".number").focus(function(){
+	$(".tishi").html(" ");
+})	
+
+</script>
