@@ -1,12 +1,12 @@
-$(function(){
+
 	$(".kuaisu").click(function(){
         $("#xiugai").css({"display":"none"});
         $("#login").css({"display":"none"});
         $("#register").css({"display":"none"});
          $("#phone").css({"display":"block"});
 	})
-	})
-$(function(){
+
+
 	
 $(".zhanghao").click(function(){
         $("#xiugai").css({"display":"none"});
@@ -15,8 +15,8 @@ $(".zhanghao").click(function(){
         $("#login").css({"display":"block"});
         
 	})
-	})
-$(function(){
+
+
 	$(".pass").click(function(){
         $("#xiugai").css({"display":"none"});
         $("#register").css({"display":"none"});
@@ -24,8 +24,8 @@ $(function(){
 		$("#login").css({"display":"block"});
         
 	})
-	})
-$(function(){
+
+
 	$(".mima").click(function(){
          $("#register").css({"display":"none"});
         $("#phone").css({"display":"none"});
@@ -33,8 +33,8 @@ $(function(){
         $("#xiugai").css({"display":"block"});
         
 	})
-	})
-$(function(){
+
+
 	$(".but").click(function(){
            $("#phone").css({"display":"none"});
 		$("#login").css({"display":"none"});
@@ -42,9 +42,9 @@ $(function(){
            $("#register").css({"display":"block"});
         
 	})
-	})
 
-$(function(){
+
+
 	$("#but1").click(function(){
          $("#xiugai").css({"display":"none"});
         $("#register").css({"display":"none"});
@@ -52,7 +52,7 @@ $(function(){
           $("#login").css({"display":"block"});
         
 	})
-})
+
 
 var str1="";
 function testF(){

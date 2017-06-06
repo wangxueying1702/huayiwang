@@ -24,7 +24,7 @@ Slideshow.prototype.initUI=function(){
 	}
 	$(this.boxId+" img:first").css({"display":"block"});
 //创建按钮
-	let ullistr="<ul style='position:absolute;left:45%;bottom:10px;'>"
+	let ullistr="<ul style='position:absolute;left:40%;bottom:10px;'>"
 	for(let i=0;i<this.imgs.length;i++){
 		ullistr+="<li ord='"+(i+1)+"' style='list-style:none;float:left;margin:10px;width:"+this.btnWidth+"px;height:"+this.btnHeight+"px;border-radius:50%;text-align:center;background-color:"+this.btnColor+";'>"+(i+1)+"</li>"
 	}
