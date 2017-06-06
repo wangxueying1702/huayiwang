@@ -11,6 +11,82 @@ body {
   right: 20px;
   bottom: 180px; }
 
+.toTop {
+  display: none;
+  text-align: center;
+  position: fixed;
+  right: 20px;
+  bottom: 110px; }
+
+#gouwu {
+  position: fixed;
+  right: 20px;
+  bottom: 260px;
+  width: 60px;
+  height: 60px; }
+
+#gou555 {
+  position: fixed;
+  right: 44px;
+  bottom: 279px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font: 14px/20px "";
+  color: red; }
+
+#tou {
+  position: absolute;
+  right: 283px;
+  top: 5px;
+  font: 14px/24px "";
+  color: red; }
+
+#kuang {
+  position: fixed;
+  right: 81px;
+  bottom: 32px;
+  display: none; }
+
+#duihuakuang {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f99;
+  overflow: auto;
+  background: pink; }
+
+#neirong {
+  width: 350px;
+  height: 30px; }
+
+#btn0 {
+  width: 40px;
+  height: 34px; }
+
+#guanbi {
+  position: absolute;
+  right: 0px;
+  top: -30px;
+  border: 1px solid #f99;
+  width: 399px;
+  height: 30px;
+  background: #99f;
+  font: 14px/30px "";
+  color: #fff; }
+
+#guanbi1 {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: -30px;
+  border-radius: 50%;
+  border: 1px solid #f99;
+  width: 30px;
+  height: 30px;
+  background: #99f;
+  font: 28px/30px "";
+  color: #fff; }
+
 header {
   height: 80px;
   background: #404040;
@@ -26,7 +102,8 @@ header .header-l img {
 
 header .header-r {
   float: right;
-  height: 80px; }
+  height: 80px;
+  position: relative; }
 
 header .header-r p {
   padding-left: 353px;
@@ -86,7 +163,7 @@ footer #footer {
   margin-bottom: 5px; }
 
 footer #footer dl {
-  margin: 0 95px 0 20px;
+  margin: 0 70px 0 20px;
   float: left;
   color: #d7d7d7; }
 
@@ -122,3 +199,7 @@ footer h3 {
   font: 14px/34px "";
   color: #fff;
   text-align: center; }
+
+footer #friend {
+  font: 14px/34px "";
+  color: #fff; }

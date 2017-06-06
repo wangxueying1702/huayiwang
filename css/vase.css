@@ -6,7 +6,7 @@
   float: left;
   position: relative;
   width: 415px;
-  height: 325px; }
+  height: 335px; }
 
 #banner #banner-r {
   float: left;
@@ -24,7 +24,7 @@
 
 #banner #banner-r ul li {
   font-size: 14px;
-  margin-bottom: 14px;
+  margin-top: 30px;
   color: #000;
   position: relative; }
 
@@ -74,35 +74,31 @@
   float: left;
   font-size: 14px;
   color: #000;
-  left: 42px;
+  left: 56px;
   top: 0;
-  position: absolute;
-  height: 80px; }
-
-#banner #banner-r ul li.yes {
-  margin-top: 80px; }
+  position: absolute; }
 
 #banner #banner-r #buy {
   position: absolute;
-  right: 5px;
+  right: 150px;
   width: 159px;
   height: 38px;
   font: 18px/48px "";
   color: #fff;
   background: url(../img1/goumai.jpg) no-repeat;
   text-align: center;
-  bottom: -80px; }
+  bottom: -130px; }
 
 #banner #banner-r #buy1 {
   position: absolute;
-  right: 193px;
+  right: 330px;
   width: 159px;
   height: 38px;
   font: 18px/48px "";
   color: #fff;
   background: url(../img1/jiaru.jpg) no-repeat;
   text-align: center;
-  bottom: -80px; }
+  bottom: -130px; }
 
 #banner #banner-r ul li .dianji {
   position: absolute;
@@ -110,26 +106,6 @@
   bottom: 0px;
   width: 18px;
   height: 18px; }
-
-#banner #banner-r ul li.yes .shifou {
-  position: absolute;
-  left: 102px;
-  bottom: 0px;
-  width: 18px;
-  height: 18px; }
-
-#banner #banner-r ul li.yes i {
-  position: relative;
-  margin-bottom: 10px;
-  float: left;
-  text-align: center;
-  display: block;
-  font: 14px/30px "";
-  color: #000;
-  margin-left: 20px;
-  border: 1px solid #a0a0a0;
-  width: 120px;
-  height: 30px; }
 
 .title {
   height: 40px;
