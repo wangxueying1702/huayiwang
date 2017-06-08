@@ -74,9 +74,23 @@
   float: left;
   font-size: 14px;
   color: #000;
-  left: 56px;
-  top: 0;
-  position: absolute; }
+  left: 41px;
+  top: -14px;
+  position: relative; }
+
+#banner #banner-r .jia {
+  font-size: 14px; }
+
+#banner #banner-r .jia #jianjian {
+  width: 20px;
+  margin-left: 12px; }
+
+#banner #banner-r .jia #jiajia {
+  width: 20px; }
+
+#banner #banner-r .jia #shu {
+  width: 30px;
+  text-align: center; }
 
 #banner #banner-r #buy {
   position: absolute;

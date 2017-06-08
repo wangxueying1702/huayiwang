@@ -8,7 +8,7 @@
   width: 415px;
   height: 335px; }
 
-#banner #box #img01 {
+#banner #box .img01 {
   position: absolute;
   width: 415px;
   height: 335px; }
@@ -16,7 +16,7 @@
 #banner #banner-r {
   float: left;
   margin-left: 48px;
-  width: 506px;
+  width: 535px;
   position: relative; }
 
 #banner #banner-r h3 {
@@ -75,21 +75,27 @@
   font-size: 14px;
   color: #000; }
 
-#banner #banner-r ul li .month {
+#banner #banner-r ul li p.month {
   float: left;
   font-size: 14px;
   color: #000;
-  left: 56px;
-  top: 0;
-  position: absolute; }
+  left: 43px;
+  top: -5px;
+  position: relative; }
 
-#banner #banner-r ul li.yes {
-  margin-top: 50px; }
+#banner #banner-r .jia {
+  font-size: 14px; }
 
-#banner #banner-r ul li .yes1 {
-  left: 56px;
-  top: 0;
-  position: absolute; }
+#banner #banner-r .jia #jianjian {
+  width: 20px;
+  margin-left: 12px; }
+
+#banner #banner-r .jia #jiajia {
+  width: 20px; }
+
+#banner #banner-r .jia #shu {
+  width: 30px;
+  text-align: center; }
 
 #banner #banner-r #buy {
   position: absolute;
@@ -100,7 +106,7 @@
   color: #fff;
   background: url(../img1/goumai.jpg) no-repeat;
   text-align: center;
-  bottom: -105px; }
+  bottom: -90px; }
 
 #banner #banner-r #buy1 {
   position: absolute;
@@ -111,7 +117,7 @@
   color: #fff;
   background: url(../img1/jiaru.jpg) no-repeat;
   text-align: center;
-  bottom: -105px; }
+  bottom: -90px; }
 
 #banner #banner-r ul li .dianji {
   position: absolute;
@@ -119,26 +125,6 @@
   bottom: 0px;
   width: 18px;
   height: 18px; }
-
-#banner #banner-r ul li.yes .shifou {
-  position: absolute;
-  left: 102px;
-  bottom: 0px;
-  width: 18px;
-  height: 18px; }
-
-#banner #banner-r ul li.yes i {
-  position: relative;
-  margin-bottom: 10px;
-  float: left;
-  text-align: center;
-  display: block;
-  font: 14px/30px "";
-  color: #000;
-  margin-left: 20px;
-  border: 1px solid #a0a0a0;
-  width: 120px;
-  height: 30px; }
 
 .title {
   height: 40px;

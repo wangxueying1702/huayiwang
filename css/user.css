@@ -45,6 +45,7 @@
   color: red; }
 
 #login .sumb {
+  cursor: pointer;
   position: absolute;
   right: 210px;
   bottom: 90px;
@@ -55,6 +56,7 @@
   background: #fff; }
 
 #login .but {
+  cursor: pointer;
   position: absolute;
   right: 95px;
   bottom: 90px;
@@ -146,17 +148,20 @@
   padding: 0 5px; }
 
 #register .kuaisu {
+  cursor: pointer;
   float: left;
   font: 12px/24px "";
   color: #000; }
 
 #register .zhanghao {
+  cursor: pointer;
   float: right;
   margin-right: 50px;
   font: 12px/24px "";
   color: red; }
 
 #register #but {
+  cursor: pointer;
   text-align: center;
   position: absolute;
   right: 155px;

@@ -104,6 +104,20 @@
   text-align: center;
   bottom: -80px; }
 
+#banner #banner-r .jia {
+  font-size: 14px; }
+
+#banner #banner-r .jia #jianjian {
+  width: 20px;
+  margin-left: 12px; }
+
+#banner #banner-r .jia #jiajia {
+  width: 20px; }
+
+#banner #banner-r .jia #shu {
+  width: 30px;
+  text-align: center; }
+
 #banner #banner-r ul li .dianji {
   position: absolute;
   left: 102px;

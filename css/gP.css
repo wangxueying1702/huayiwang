@@ -89,8 +89,8 @@ header div a {
 
 #main .main-l .main-l-t #box {
   float: left;
-  width: 402px;
-  height: 300px;
+  width: 400px;
+  height: 325px;
   margin-right: 40px; }
 
 #main .main-l .main-l-t .box-r {
@@ -204,5 +204,3 @@ header div a {
 #main .shangpin a {
   font: 12px/24px "";
   color: red; }
-
-/*# sourceMappingURL=gP.css.map */
