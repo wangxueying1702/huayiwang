@@ -17,7 +17,6 @@ jQuery.fn.extend({//jQuery的壳子
 				$(this.smallBoxId).mouseover(function(event){
 					var e = event || window.event;
 					if(!t.hasBig){
-						console.log("createBig()");
 						t.createBig(e);
 						t.hasBig = true;
 					}
@@ -41,9 +40,9 @@ jQuery.fn.extend({//jQuery的壳子
 			
 			removeBig:function(){
 				//删除放大镜子和大图
-				$(this.smallBoxId).remove(this.mirrorDom);//删除镜子
-				this.bigBoxDom.removeChild(this.bigImgDom);//删除大容器里的图片
-				$(this.smallBoxId).remove(this.bigBoxDom);//删除大容器
+				$(this.smallBoxId).children(".div1").remove();//删除镜子
+				$(this.bigBoxDom).children(0).remove();//删除大容器里的图片
+				$("#bag").remove();//删除大容器
 				this.hasBig = false;//没有放大镜了
 				
 			},
@@ -55,17 +54,17 @@ jQuery.fn.extend({//jQuery的壳子
 				var mirrorLeft = e.offsetX-this.baseLeft-this.mirrorWidth/2;
 				var mirrorTop = e.offsetY-this.baseTop-this.mirrorHeight/2;
 			
-				var mirrorDiv = "<div style='position:absolute;left:"+mirrorLeft+"px;top:"+mirrorTop+"px;width:"+this.mirrorWidth+"px;height:"+this.mirrorHeight+"px;border:1px solid pink;' ></div>";
+				var mirrorDiv = "<div class='div1'  style='cursor:move;background:#fff; opacity:0.3;position:absolute;left:"+mirrorLeft+"px;top:"+mirrorTop+"px;width:"+this.mirrorWidth+"px;height:"+this.mirrorHeight+"px;' ></div>";
 				var t = this;
 				this.mirrorDom = $(mirrorDiv)[0];//根据字符串创建了DOM对象
 				$(this.smallBoxId).append(this.mirrorDom);
-				this.mirrorDom.onmouseout = function(event){
+				$(this.mirrorDom).mouseout(function(event){
 					var e = event||window.event;
 					if(t.hasBig){
 						t.removeBig();	
 					}
 					e.stopPropagation();
-				}
+				});
 			
 				//大图的容器也需要动态创建
 				this.bigBoxDom = document.createElement("div");
@@ -80,7 +79,7 @@ jQuery.fn.extend({//jQuery的壳子
 					case "左":left1=-1*boxBigWidth;top1=0;break;
 					default:;
 				}
-				this.bigBoxDom.style.cssText = "position:absolute;left:"+left1+"px;top:"+top1+"px;width:"+boxBigWidth+"px;height:"+boxBigHeight+"px;overflow:hidden;";
+				this.bigBoxDom.style.cssText = "z-index:999;position:absolute;left:"+left1+"px;top:"+top1+"px;width:"+boxBigWidth+"px;height:"+boxBigHeight+"px;overflow:hidden;";
 				this.bigBoxDom.id="bag";
 				$(this.smallBoxId).append(this.bigBoxDom);
 				
@@ -125,4 +124,7 @@ jQuery.fn.extend({//jQuery的壳子
 		var m = new Mirror(obj);	
 	}//mirror函数；
 });
+
+
+
 
