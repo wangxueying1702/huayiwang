@@ -38,6 +38,10 @@
   text-align: center;
   margin-bottom: 10px; }
 
+#banner #tianjia input {
+  width: 30px;
+  text-align: center; }
+
 #banner #p1 {
   position: relative;
   height: 40px;

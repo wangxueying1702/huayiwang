@@ -105,7 +105,8 @@
   bottom: -80px; }
 
 #banner #banner-r .jia {
-  font-size: 14px; }
+  font-size: 14px;
+  margin-bottom: 10px; }
 
 #banner #banner-r .jia #jianjian {
   width: 20px;
@@ -117,6 +118,18 @@
 #banner #banner-r .jia #shu {
   width: 30px;
   text-align: center; }
+
+#banner #banner-r ul li .dute {
+  margin-bottom: 10px;
+  float: left;
+  text-align: center;
+  display: block;
+  font: 14px/30px "";
+  color: #e43669;
+  margin-left: 20px;
+  border: 1px solid #e43669;
+  width: 120px;
+  height: 30px; }
 
 #banner #banner-r ul li .dianji {
   position: absolute;
@@ -168,3 +181,5 @@
 
 #main img:hover {
   transform: scaleX(1.05); }
+
+/*# sourceMappingURL=project.css.map */
