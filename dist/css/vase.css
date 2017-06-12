@@ -1,0 +1,148 @@
+#banner {
+  margin-top: 48px;
+  height: 500px; }
+
+#banner #box {
+  float: left;
+  position: relative;
+  width: 415px;
+  height: 335px; }
+
+#banner #banner-r {
+  float: left;
+  margin-left: 48px;
+  width: 506px;
+  position: relative; }
+
+#banner #banner-r h3 {
+  font: 18px/24px "";
+  color: #000; }
+
+#banner #banner-r b {
+  font: 12px/30px "";
+  color: #d8d8d8; }
+
+#banner #banner-r ul li {
+  font-size: 14px;
+  margin-top: 30px;
+  color: #000;
+  position: relative; }
+
+#banner #banner-r ul li u {
+  font-size: 14px;
+  color: #000;
+  margin-left: 20px; }
+
+#banner #banner-r ul li s {
+  position: relative;
+  margin-bottom: 10px;
+  float: left;
+  text-align: center;
+  display: block;
+  font: 14px/30px "";
+  color: #000;
+  margin-left: 20px;
+  border: 1px solid #a0a0a0;
+  width: 120px;
+  height: 30px; }
+
+#banner #banner-r ul li s.dute {
+  margin-bottom: 10px;
+  float: left;
+  text-align: center;
+  display: block;
+  font: 14px/30px "";
+  color: #e43669;
+  margin-left: 20px;
+  border: 1px solid #e43669;
+  width: 120px;
+  height: 30px; }
+
+#banner #banner-r ul li img {
+  position: absolute;
+  left: 165px;
+  bottom: 11px;
+  width: 18px;
+  height: 18px; }
+
+#banner #banner-r ul li p {
+  float: left;
+  font-size: 14px;
+  color: #000; }
+
+#banner #banner-r ul li .month {
+  float: left;
+  font-size: 14px;
+  color: #000;
+  left: 41px;
+  top: -14px;
+  position: relative; }
+
+#banner #banner-r .jia {
+  font-size: 14px; }
+
+#banner #banner-r .jia #jianjian {
+  width: 20px;
+  margin-left: 12px; }
+
+#banner #banner-r .jia #jiajia {
+  width: 20px; }
+
+#banner #banner-r .jia #shu {
+  width: 30px;
+  text-align: center; }
+
+#banner #banner-r #buy {
+  position: absolute;
+  right: 150px;
+  width: 159px;
+  height: 38px;
+  font: 18px/48px "";
+  color: #fff;
+  background: url(../img1/goumai.jpg) no-repeat;
+  text-align: center;
+  bottom: -130px; }
+
+#banner #banner-r #buy1 {
+  position: absolute;
+  right: 330px;
+  width: 159px;
+  height: 38px;
+  font: 18px/48px "";
+  color: #fff;
+  background: url(../img1/jiaru.jpg) no-repeat;
+  text-align: center;
+  bottom: -130px; }
+
+#banner #banner-r ul li .dianji {
+  position: absolute;
+  left: 102px;
+  bottom: 0px;
+  width: 18px;
+  height: 18px; }
+
+.title {
+  height: 40px;
+  border-bottom: 1px solid #d7d7d7;
+  background: #f7f7f7; }
+
+.title a {
+  padding: 0 15px;
+  font: 14px/40px "";
+  color: #404040; }
+
+.title span {
+  font: 14px/40px "";
+  color: #d7d7d7; }
+
+#main {
+  text-align: center;
+  padding-bottom: 160px; }
+
+#main img {
+  transition: 1s; }
+
+#main img:hover {
+  transform: scaleX(1.05); }
+
+/*# sourceMappingURL=vase.css.map */

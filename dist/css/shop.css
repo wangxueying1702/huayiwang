@@ -1,0 +1,124 @@
+#banner {
+  position: relative; }
+
+#banner h4 {
+  font: 16px/38px "";
+  color: #696969; }
+
+#banner #pp {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #f3f3f3;
+  height: 75px;
+  margin: 20px 0;
+  padding-top: 15px; }
+
+#banner #pp span {
+  font: 18px "";
+  color: #99f; }
+
+#banner #tianjia {
+  font: 18px/40px ""; }
+
+#banner #tianjia td {
+  color: #000;
+  background: #f3f3f3;
+  width: 204px;
+  text-align: center;
+  border: 1px solid #ddd; }
+
+#banner #tianjia td img {
+  width: 160px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 10px; }
+
+#banner #p1 {
+  position: relative;
+  height: 40px;
+  margin-bottom: 50px; }
+
+#banner #p1 h4 {
+  color: #99f;
+  position: absolute;
+  left: 10px;
+  bottom: -27px;
+  width: 80px;
+  height: 40px; }
+
+#banner #p1 h5 {
+  position: absolute;
+  right: 100px;
+  bottom: -27px;
+  height: 40px;
+  font: 16px/38px "";
+  color: #696969; }
+
+#banner #p1 h6 {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  height: 30px;
+  width: 80px;
+  background: #CF1339;
+  font: 14px/30px "";
+  color: #fff;
+  text-align: center; }
+
+h3 {
+  font: 26px/94px "";
+  color: #717171;
+  text-align: center; }
+
+#subscription {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+#subscription p {
+  width: 310px;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 10px; }
+
+#subscription p img {
+  margin-bottom: 4px;
+  display: block;
+  width: 310px;
+  height: 230px; }
+
+#subscription p img:hover {
+  margin-bottom: 4px;
+  display: block;
+  box-shadow: 0 0 5px #404040; }
+
+#subscription p span {
+  font: 24px/50px "";
+  color: #000;
+  margin: 0 10px; }
+
+#subscription p b {
+  font: 16px/50px "";
+  color: #727272; }
+
+#subscription p s {
+  font-size: 14px;
+  padding-left: 5px;
+  color: #99f;
+  cursor: pointer; }
+
+#subscription p s:hover {
+  color: red; }
+
+#subscription p.xianhua .ji {
+  transform: none;
+  width: 25px;
+  height: 25px;
+  display: inline;
+  margin-left: 10px;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=shop.css.map */

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<header>
+			<div class="margin">
+				<div class="header-l">
+					<img src="img/logo.png" />
+				</div>
+				<div class="header-r">
+					<p class="login">
+						<a href="user.html">登录</a>
+						<span>|</span>
+						<a href="user.html">注册</a>
+					</p>
+					<ul>
+						<li><a href="index.html">首页</a></li>
+    					<li class="nav"><a href="#">订阅鲜花</a>
+    						<ul class="nav1">
+
+       						</ul>
+    					</li>
+						<li class="nav"><a href="#">礼品鲜花</a>
+							<ul class="nav2">
+
+       						</ul>
+						</li>
+						<li class="nav"><a href="#">绿植盆栽</a>
+							<ul class="nav3">
+
+       						</ul>
+						</li>
+						<li class="nav"><a href="#">花边小物</a>
+							<ul class="nav4">
+
+       						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section id="banner" class="margin">
+		</section>
+		<section class="margin clear">
+			<h3>一周一花 订阅未知的鲜美生活</h3>
+			<div class="subscription1">
+				
+			</div>
+			<h3>礼品鲜花</h3>
+			<div class="subscription2">
+				
+			</div>
+			<h3>绿植盆栽</h3>
+			<div class="subscription3">
+				
+			</div>
+			<h3>花边小物</h3>
+			<div class="subscription4">
+			</div>
+		</section>
+		<section class="margin clear">
+			<h3>产品活动</h3>
+			<div id="product-l">
+				
+			</div>
+			<div id="product-r">
+				
+			</div>
+		</section>
+		<footer>
+			<div class="margin clear" id="footer">
+				<dl>
+                    <dt><a href="#">帮助中心</a></dt>
+                    <dd><a href="#">常见问题</a></dd>
+                </dl>
+    			<dl>
+    				<dt><a href="#">关于我们</a></dt>
+        			<dd><a href="#">公司简介</a></dd>
+        			<dd><a href="#">新闻报道</a></dd>
+        			<dd><a href="#">隐私条款</a></dd>
+        			<dd><a href="#">招贤纳士</a></dd>
+    			</dl>
+    			<dl>
+    				<dt><a href="#">公司业务</a></dt>
+        			<dd><a href="#">商务合作</a></dd>
+        			<dd><a href="#">大客户合作</a></dd>
+    			</dl>
+    			<dl>
+    				<dt><a href="#">公司媒体</a></dt>
+        			<dd><a href="#">新浪微博</a></dd>
+    			</dl>
+    			<dl>
+    				<dt><a href="#">友情链接</a></dt>
+        			<dd><a href="http://10.35.161.47/formylove/dist/index.html" target="_blank" id="friend">ForMyLove</a></dd>
+    			</dl>
+    			 <p>
+    				<img src="img/qrcode_for_gh_63021c4b0949_1280.jpg" />
+    				<span>微信公众号</span>
+    			</p>
+    			
+    		</div>
+    		 <h3>CopyRight &copy;2017 花艺网股份有限公司  &nbsp; 保留所有版权&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IPC备案号：陕ICP备1111111号-01</h3>
+		</footer>
+		<div class="fudong">
+			<img src="img/kf.png" id="kf"/>
+			<a href="shop.html"><img src="img1/gou.png" id="gouwu" /></a>
+			<p class="toTop"><img src="img1/top1.png"/></p>
+			<h5 id="gou555">购</h5>
+		</div>
+		<p id="tou">亲，请您登陆，了解更过多</p>
+		<div id="kuang">
+			<p id="guanbi">花艺网客服为您解答</p>
+			<p id="guanbi1">×</p>
+			<div id="duihuakuang"></div><br/>
+			<input id="neirong" type="text"/>
+			<input id="btn0" type="button" value="发送"/>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/banner.js" ></script>
+<script type="text/javascript" src="js/nav.js" ></script>
+<script type="text/javascript" src="js/cookieTools1702.js" ></script>
+<script type="text/javascript" src="js/kf.js" ></script>
+<script type="text/javascript">
+$(function(){
+	var cook=getCookie("userName");
+	if(cook!=""){
+		$("#tou").html("欢迎您："+cook);
+		$(".login").html("注销登录")
+		$(".login").click(function(){
+			saveCookie("userName",$("#userName").val(),-1);
+			saveCookie("userPass",$("#pass1").val(),-1);
+			location.href="user.html";
+		})
+	}
+
+	var obj;
+	$.post("getGoodsList.php",function(data){
+			var obj=eval(data)
+			for(var key in obj){
+				if(obj[key].goodsType=="订阅鲜花"){				
+					var p="<p class='xianhua'><img value='"+obj[key].goodsId+"' src='img1/"+obj[key].goodsImg+"'/><span>"+obj[key].goodsName+"</span><b>"+obj[key].goodsDesc+"</b><br /><img src='img1/dianji.jpg' class='ji'/><a href='缤纷设计.html'><s>点击了解商品详情</s></a></p>";
+					$(".subscription1").append(p);
+			}
+			if(obj[key].goodsType=="礼品鲜花"){				
+				var p="<p class='xianhua'><img value='"+obj[key].goodsId+"' src='img1/"+obj[key].goodsImg+"'/><span>"+obj[key].goodsName+"</span><b>"+obj[key].goodsDesc+"</b><br /><img src='img1/dianji.jpg' class='ji'/><a href='topspeed.html'><s>点击了解商品详情</s></a></p>";
+				$(".subscription2").append(p);
+			}
+			if(obj[key].goodsType=="绿植盆栽" || obj[key].goodsType=="吸水盆栽"){				
+				var p="<p class='lvzhi'><img value='"+obj[key].goodsId+"' src='img1/"+obj[key].goodsImg+"'/><span>"+obj[key].goodsName+"</span><b>"+obj[key].goodsDesc+"</b><br /><img src='img1/dianji.jpg' class='ji'/><a href='gP.html'><s>点击了解商品详情</s></a></p>";
+				$(".subscription3").append(p);
+			}
+			if(obj[key].goodsType=="花边小物"){				
+				var p="<p class='lvzhi'><img value='"+obj[key].goodsId+"' src='img1/"+obj[key].goodsImg+"'/><span>"+obj[key].goodsName+"</span><b>"+obj[key].goodsDesc+"</b><br /><img src='img1/dianji.jpg' class='ji'/><a href='vase.html'><s>点击了解商品详情</s></a></p>";
+				$(".subscription4").append(p);
+			}
+			if(obj[key].goodsType=="产品活动1"){				
+				var img="<img value='"+obj[key].goodsId+"' src='img/"+obj[key].goodsImg+"' />"
+				$("#product-l").append(img);
+			}
+			if(obj[key].goodsType=="产品活动"){				
+				var img="<img value='"+obj[key].goodsId+"' src='img/"+obj[key].goodsImg+"' /><br/>"
+				$("#product-r").append(img);
+			}
+
+		}
+			$('.xianhua').on('click',"a", function(event) {	
+				var ord=$(this).siblings("img").attr("value");
+				//var ord=obj.goodsId;
+ 				saveCookie("xuanze",ord,7);
+			});
+			$('.lvzhi').on('click',"a", function(event) {	
+				var ord=$(this).siblings("img").attr("value");
+				//var ord=obj.goodsId;
+ 				saveCookie("xuanze",ord,7);
+			});
+			
+	});	
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$("#kf").click(function(){
+		$("#kuang").css({"display":"block"});
+	})
+	$("#guanbi1").click(function(){
+		$("#kuang").css({"display":"none"});
+	})
+document.body.onkeydown=function(event){
+	let e=event||window.event
+	if(e.keyCode==13){
+		fasong();
+	}
+}
+	$("#btn0").click(function(){
+		fasong();
+	})
+	new  Slideshow({
+		boxId:"#banner",
+		imgs:["img/banner2017032901.jpg","img/banner2017032902.jpg","img/banner20170523.jpg","img/slider2.jpg","img/slider5.jpg","img/banner2017032901.jpg","img/banner2017032902.jpg","img/banner20170523.jpg"],
+		width:1349,
+		height:356,
+		timeSpace:3000,
+		fadeInOutTime:2000,
+		btnColor:"yellow",
+		btnHighColor:"#99f",
+		btnWidth:10,
+		btnHeight:10,
+		btnHasOrd:false
+	});
+	$(".toTop").click(function () {
+	var speed=500
+	;//滑动的速度
+	    $('body,html').animate({scrollTop: 0}, speed);
+	    return false;
+	});
+	
+$(document).on('scroll',function(){
+	if($(document).scrollTop()>400){
+		$(".toTop").css({"display":"block"});
+	}else{
+		$(".toTop").css({"display":"none"});
+	}
+});
+})
+
+
+</script>
