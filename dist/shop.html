@@ -52,9 +52,10 @@
 				<span>亲，购物车还没有任何商品，点击<a href="index.html"> 首页 </a>开启购物吧！</span>
 			</p>
 			<table id="tianjia">
-				<tr>
+				<tr class="tt">
 					<td>产品序号</td>
 					<td>产品名称</td>
+					<td>产品图片</td>
 					<td>数量</td>
 					<td>价格</td>
 					<td>小计</td>
@@ -64,7 +65,7 @@
 			<div id="p1">
 					<a href="index.html"><h4>继续购物</h4></a>
 					<h5 id="leijia">共计：￥0.00</h5>
-					<h6 id="jiesuan">结算</h6>
+					<h6 id="jiesuan"><a href="jiesuan.html" target="_blank">结算</a></h6>
 			</div>
 		</section>
 		<section class="margin clear">
@@ -141,7 +142,7 @@
     			</dl>
     			<dl>
     				<dt><a href="#">友情链接</a></dt>
-        			<dd><a href="http://10.35.161.47/formylove/dist/index.html" target="_blank" id="friend">ForMyLove</a></dd>
+        			<dd><a href="http://10.35.164.6/formylove/dist/index.html" target="_blank" id="friend">ForMyLove</a></dd>
     			</dl>
     			 <p>
     				<img src="img/qrcode_for_gh_63021c4b0949_1280.jpg" />
@@ -188,14 +189,64 @@ $(function(){
 		if(obj.length>0){
 			$("#pp").css({"display":"none"});
 			for(var i=0;i<obj.length;i++){
-				var tr="<tr><td>"+obj[i].goodsId+"</td><td>"+obj[i].goodsName+"<img src='img1/"+obj[i].goodsImg+"'/></td><td id='jia'>"+obj[i].goodsSum+"</td><td>"+obj[i].goodsPrice+"</td><td id='xiaoji'>"+(obj[i].goodsPrice)*(obj[i].goodsSum)+"</td><td><a href='#'>删除</a></td></tr>"
+				var tr="<tr><td>"+obj[i].goodsId+"</td><td>"+obj[i].goodsName+"</td><td><img src='img1/"+obj[i].goodsImg+"' style='margin-top:10px'/></td><td id='jia'><input type='button' value='-' class='jian'/><input type='text' class='shu' value='"+obj[i].goodsSum+"'/><input type='button' value='+' class='jia'/></td><td>"+obj[i].goodsPrice+"</td><td id='xiaoji'>"+(obj[i].goodsPrice)*(obj[i].goodsSum)+"</td><td><a href='#'>删除</a></td></tr>"
 				$("#tianjia").append(tr);
-				jia+=parseInt((obj[i].goodsPrice)*(obj[i].goodsSum))
+				//jia+=parseInt((obj[i].goodsPrice)*(obj[i].goodsSum))
 			}
+			calTotalMoney();
 		}
 		
-		$("#leijia").html("共计金额：￥"+jia+"元");
+		//$("#leijia").html("共计金额：￥"+jia+"元");
 	})
+	$('#tianjia').on('click',".jia", function(event) {
+		var t=this;
+		var zi=$(t).parents("tr").children(0).html();
+		var count=$(t).siblings(".shu").val();
+		count++;
+		$.get("updateGoodsCount.php",{"vipName":cook,"goodsId":zi,"goodsCount":count},function(data){
+			if(data==1){
+				$(t).siblings(".shu").val(count);
+				//location.reload();
+				var zi1=parseInt($(t).parents("tr").children().eq(4).text())
+				$(t).parents("tr").children().eq(5).text(count*zi1);
+				//calTotalMoney();
+			}
+			calTotalMoney();
+		})
+		
+	})
+	$('#tianjia').on('click',".jian", function(event) {
+		var t=this;
+		var zi=$(t).parents("tr").children(0).html();
+		var count=$(t).siblings(".shu").val();
+		if(count==1){
+			count=1;
+		}else{
+			count--;
+		$.get("updateGoodsCount.php",{"vipName":cook,"goodsId":zi,"goodsCount":count},function(data){
+			if(data==1){
+				$(t).siblings(".shu").val(count);
+				var zi1=parseInt($(t).parents("tr").children().eq(4).text())
+				$(t).parents("tr").children().eq(5).text(count*zi1);
+				
+			}
+			calTotalMoney();
+		})
+		
+		}
+		
+	})
+function calTotalMoney(){	
+	var totalMoney = 0;
+	var table=$("#tianjia tr").length;
+	//var childs = $("#tianjia tr")
+	for(let i=1;i<table;i++){
+		totalMoney += parseInt($("#tianjia tr")[i].children[5].innerHTML);
+	}
+	$("#leijia").html("共计金额：￥"+totalMoney+"元");
+	saveCookie("jiesuan",totalMoney,7);
+}
+
 	$('#tianjia').on('click',"a", function(event) {
 		var t=this;
 		var zi=$(t).parents("tr").children(0).html();

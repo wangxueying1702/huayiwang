@@ -33,7 +33,8 @@
 			  $("s").eq(index).siblings().css({"border":"1px solid #a0a0a0"});
 			  $(".img01").attr({ src:arr[index]}); 
 			  //$("#bag").children(0).attr({ src:arr[index]}); 
-			  $("#money").html("￥"+(str+str1))
+			  var shu=$("#shu").val();
+	  			$("#money").children("i").html(str*shu)
 			  $("#kucun").html("库存："+str2)
 			  $("#box").mirror({
 					smallBoxId: "#box",                      
@@ -54,12 +55,13 @@
 			$('.yes1').on('click',"i", function(event) {	
 			  let index = $(this).index();
 			  $("i").eq(index).children([0]).addClass("shifou");
-			  str1=parseFloat($("i").eq(index).attr("value"));
-			  $("i").eq(index).children([0]).css({"display":"block"});
-			  $("i").eq(index).siblings().children([0]).css({"display":"none"});
-			  $("i").eq(index).css({"border":"1px solid #e43669"})
-			  $("i").eq(index).siblings().css({"border":"1px solid #a0a0a0"});
-			  $("#money").html("￥"+(str+str1))
+			  str1=parseFloat($("i").eq(index+1).attr("value"));
+			  $("i").eq(index+1).children([0]).css({"display":"block"});
+			  $("i").eq(index+1).siblings().children([0]).css({"display":"none"});
+			  $("i").eq(index+1).css({"border":"1px solid #e43669"})
+			  $("i").eq(index+1).siblings().css({"border":"1px solid #a0a0a0"});
+			 var money=parseInt($("#money").children("i").text())
+	  		$("#money").children("i").html(money+str1);
 			});
 			
 	});

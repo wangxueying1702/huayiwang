@@ -5,7 +5,6 @@
 		<title></title>
 		<link rel="stylesheet" href="css/public.css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/index.css" />
 	</head>
 	<body>
 		<header>
@@ -47,31 +46,9 @@
 		</header>
 		<section id="banner" class="margin">
 		</section>
-		<section class="margin clear">
-			<h3>一周一花 订阅未知的鲜美生活</h3>
-			<div class="subscription1">
-				
-			</div>
-			<h3>礼品鲜花</h3>
-			<div class="subscription2">
-				
-			</div>
-			<h3>绿植盆栽</h3>
-			<div class="subscription3">
-				
-			</div>
-			<h3>花边小物</h3>
-			<div class="subscription4">
-			</div>
-		</section>
-		<section class="margin clear">
-			<h3>产品活动</h3>
-			<div id="product-l">
-				
-			</div>
-			<div id="product-r">
-				
-			</div>
+		<section class="margin" style="text-align: center;margin: 20px auto;">
+			<p class="jiesuan" style="font:14px/30px '';">亲爱的：<b style="color:mediumvioletred"></b><br/>您购买总金额为：￥<span style="color:red">0</span><br/>请您扫码进行支付</p>
+			<img src="img/xin.JPG" style="width: 300px;height: 300px;"/>
 		</section>
 		<footer>
 			<div class="margin clear" id="footer">
@@ -110,7 +87,6 @@
 		<div class="fudong">
 			<img src="img/kf.png" id="kf"/>
 			<a href="shop.html"><img src="img1/gou.png" id="gouwu" /></a>
-			<p class="toTop"><img src="img1/top1.png"/></p>
 			<h5 id="gou555">购</h5>
 			<img src="img1/time.png" id="xuanze" style="width: 30px;height: 30px;border-radius:50%;position: absolute;right: 100px;bottom:78px"/>
 		</div>
@@ -130,8 +106,8 @@
 <script type="text/javascript" src="js/cookieTools1702.js" ></script>
 <script type="text/javascript" src="js/kf.js" ></script>
 <script type="text/javascript">
-$(function(){
-	function xuanze(){
+$(function(){	
+function xuanze(){
 		$("#xuanze").animate({ 
     		left: 10,
 			bottom:85,
@@ -145,6 +121,7 @@ $(function(){
 
 	}
 	setInterval(xuanze,500)
+			
 	var cook=getCookie("userName");
 	if(cook!=""){
 		$("#tou").html("欢迎您："+cook);
@@ -156,49 +133,11 @@ $(function(){
 		})
 	}
 
-	var obj;
-	$.post("getGoodsList.php",function(data){
-			var obj=eval(data)
-			for(var key in obj){
-				if(obj[key].goodsType=="订阅鲜花"){				
-					var p="<p class='xianhua'><img value='"+obj[key].goodsId+"' src='img1/"+obj[key].goodsImg+"'/><span>"+obj[key].goodsName+"</span><b>"+obj[key].goodsDesc+"</b><br /><img src='img1/dianji.jpg' class='ji'/><a href='缤纷设计.html'><s>点击了解商品详情</s></a></p>";
-					$(".subscription1").append(p);
-			}
-			if(obj[key].goodsType=="礼品鲜花"){				
-				var p="<p class='xianhua'><img value='"+obj[key].goodsId+"' src='img1/"+obj[key].goodsImg+"'/><span>"+obj[key].goodsName+"</span><b>"+obj[key].goodsDesc+"</b><br /><img src='img1/dianji.jpg' class='ji'/><a href='topspeed.html'><s>点击了解商品详情</s></a></p>";
-				$(".subscription2").append(p);
-			}
-			if(obj[key].goodsType=="绿植盆栽" || obj[key].goodsType=="吸水盆栽"){				
-				var p="<p class='lvzhi'><img value='"+obj[key].goodsId+"' src='img1/"+obj[key].goodsImg+"'/><span>"+obj[key].goodsName+"</span><b>"+obj[key].goodsDesc+"</b><br /><img src='img1/dianji.jpg' class='ji'/><a href='gP.html'><s>点击了解商品详情</s></a></p>";
-				$(".subscription3").append(p);
-			}
-			if(obj[key].goodsType=="花边小物"){				
-				var p="<p class='lvzhi'><img value='"+obj[key].goodsId+"' src='img1/"+obj[key].goodsImg+"'/><span>"+obj[key].goodsName+"</span><b>"+obj[key].goodsDesc+"</b><br /><img src='img1/dianji.jpg' class='ji'/><a href='vase.html'><s>点击了解商品详情</s></a></p>";
-				$(".subscription4").append(p);
-			}
-			if(obj[key].goodsType=="产品活动1"){				
-				var img="<img value='"+obj[key].goodsId+"' src='img/"+obj[key].goodsImg+"' />"
-				$("#product-l").append(img);
-			}
-			if(obj[key].goodsType=="产品活动"){				
-				var img="<img value='"+obj[key].goodsId+"' src='img/"+obj[key].goodsImg+"' /><br/>"
-				$("#product-r").append(img);
-			}
-
-		}
-			$('.xianhua').on('click',"a", function(event) {	
-				var ord=$(this).siblings("img").attr("value");
-				//var ord=obj.goodsId;
- 				saveCookie("xuanze",ord,7);
-			});
-			$('.lvzhi').on('click',"a", function(event) {	
-				var ord=$(this).siblings("img").attr("value");
-				//var ord=obj.goodsId;
- 				saveCookie("xuanze",ord,7);
-			});
-			
-	});	
- 
+$(".jiesuan").children("b").html(cook);
+var shu=getCookie("jiesuan");
+if(shu!=""){
+	$(".jiesuan").children("span").html(shu+"元");
+}
 	
 	
 	
@@ -228,19 +167,7 @@ document.body.onkeydown=function(event){
 	$("#btn0").click(function(){
 		fasong();
 	})
-	new  Slideshow({
-		boxId:"#banner",
-		imgs:["img/banner2017032901.jpg","img/banner2017032902.jpg","img/banner20170523.jpg","img/slider2.jpg","img/slider5.jpg","img/banner2017032901.jpg","img/banner2017032902.jpg","img/banner20170523.jpg"],
-		width:1349,
-		height:356,
-		timeSpace:3000,
-		fadeInOutTime:2000,
-		btnColor:"yellow",
-		btnHighColor:"#99f",
-		btnWidth:10,
-		btnHeight:10,
-		btnHasOrd:false
-	});
+
 	$(".toTop").click(function () {
 	var speed=500
 	;//滑动的速度

@@ -52,7 +52,7 @@
 			<div id="banner-r">
 				<h3>明艳雪山&情迷戴安娜&nbsp;&nbsp;全国同城配送</h3>
 				<ul class="clear">
-					<li>价格：<u id="money">￥199.00~￥399.00</u></li>
+					<li>价格：<u id="money">￥<i>199-399</i>元</u></li>
 					<li>送至：<span>&nbsp; 省：<select id="sheng">
 											<option>请选择省</option>
 										</select>
@@ -62,12 +62,13 @@
 							<u>运费：0元</u>
 							<u id="kucun">库存：199~500</u>
 				</li>
+				
 					<li class="clear"><p>款式：</p><p class="month"></p></li>
 				</ul>
 				<div class="jia">
 					数量：
 					<input type="button" value="-" id="jianjian" />
-					<input type="text" id="shu" value="0" />
+					<input type="text" id="shu" value="1" />
 					<input type="button" value="+" id="jiajia" />
 				</div>
 				<p id="buy1"></p>
@@ -126,7 +127,7 @@
     			</dl>
     			<dl>
     				<dt><a href="#">友情链接</a></dt>
-        			<dd><a href="http://10.35.161.47/formylove/dist/index.html" target="_blank" id="friend">ForMyLove</a></dd>
+        			<dd><a href="http://10.35.164.6/formylove/dist/index.html" target="_blank" id="friend">ForMyLove</a></dd>
     			</dl>
     			 <p>
     				<img src="img/qrcode_for_gh_63021c4b0949_1280.jpg" />
@@ -140,6 +141,7 @@
 			<p class="toTop"><img src="img1/top1.png"/></p>
 			<a href="shop.html"><img src="img1/gou.png" id="gouwu" /></a>
 			<h5 id="gou555">购</h5>
+			<img src="img1/time.png" id="xuanze" style="width: 30px;height: 30px;border-radius:50%;position: absolute;right: 100px;bottom:78px"/>
 		</div>
 		<p id="tou">亲，请您登陆，了解更过多</p>
 		<div id="kuang">
@@ -160,6 +162,20 @@
 <script type="text/javascript" src="js/kf.js" ></script>
 <script type="text/javascript">
 $(function(){
+	function xuanze(){
+		$("#xuanze").animate({ 
+    		left: 10,
+			bottom:85,
+			width:35,
+		height:35},1000)
+		$("#xuanze").animate({ 
+    		right: 90,
+			bottom:78,
+			width:30,
+		height:30},1000)
+
+	}
+	setInterval(xuanze,500)
 		var cook=getCookie("userName");
 	if(cook!=""){
 		$("#tou").html("欢迎您："+cook);

@@ -24,7 +24,7 @@
 							<span>运费：&nbsp;&nbsp;<s>￥0.00</s></span><br/>
 							<span>款式：&nbsp;&nbsp;<s class="te">沙漠玫瑰/中龙蛋盆、栀子花/懒人吸水玻璃瓶、杜鹃花/中白龙蛋盆、红掌/中龙蛋盆、粉掌/中龙蛋盆、虎刺梅/中球盆</s></span>
 						</p>
-						<img src="img1/goumai.jpg" />
+						<img src="img1/goumai.jpg" id="goumai"/>
 						<h4>支付：<img src="img1/wei.PNG"/>微信支付<img src="img1/yin.PNG"/>银行卡<img src="img1/zhi.PNG"/>支付宝</h4>
 					</div>
 				</div>
@@ -119,6 +119,7 @@ document.body.onkeydown=function(event){
 		fasong();
 	})
 		//商品详情显示
+	var arr0=[];
 	var arr=[];
 	var arr1=[];
 	var arr2=[];
@@ -163,6 +164,11 @@ $(document).on('scroll',function(){
 		$(".toTop").css({"display":"none"});
 	}
 });
+
+$("#goumai").click(function(){
+	saveCookie("jiesuan",39.9,7);
+	location.href="jiesuan.html"
+})
 })
 
 

@@ -20,7 +20,7 @@ $(function(){
 					$(".nav2").append(lis);
 			}
 			if(obj[key].goodsType=="绿植盆栽"){				
-				var lis="<li name='"+obj[key].goodsId+"'><a href='gP.html'>"+obj[key].goodsName+"</a></li>";
+				var lis="<li name='"+obj[key].goodsId+"'><a href='gP.html' target='_blank'>"+obj[key].goodsName+"</a></li>";
 					$(".nav3").append(lis);
 			}
 			if(obj[key].goodsType=="花边小物"){				

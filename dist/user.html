@@ -200,13 +200,15 @@ document.body.onkeydown=function(event){
 			}else{
 				$(t).siblings(".tishi").html("此用户名已存在，请重新选择");
 			}
-		});		
+		});	
 		}
 		if($(this).val()==""){
 			$(".tishi").html("");
 		}
 		
 	});
+	
+/*
 	$("#but").click(function(){
 		if($(".verify").val()==""||$("#user").val()==""||$("#pass").val()==""){
 			alert("该项不能为空");
@@ -222,7 +224,48 @@ document.body.onkeydown=function(event){
 			});		
 		}
 		
+	});*/
+	
+
+
+var iter ;
+$("#but").click(function(){
+	if($(".verify").val()==""||$("#user").val()==""||$("#pass").val()==""){
+		alert("该项不能为空");
+	}else{
+		iter = g_fun();
+		iter.next();
+	}
+});
+
+function* g_fun(){
+	yield  $.get("yanzheng.php",{userName:$("#user").val()},function(data){
+	if(data=="1"){
+			iter.next();
+	}else{
+		alert("此用户名已存在，请重新选择");
+		}
 	});
+	yield $.post("userName.php",{"userName":$("#user").val(),"userPass":$("#pass").val()},function(data){
+		if(data=="1"){
+				location.href="user.html";
+			}else{
+				alert("注册失败");
+			}
+	});
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	$("#butbg").click(function(){
 		var t=this;
 		if($("#userName").val()==""||$("#pass1").val()==""){

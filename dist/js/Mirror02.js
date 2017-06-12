@@ -54,7 +54,7 @@ jQuery.fn.extend({//jQuery的壳子
 				var mirrorLeft = e.offsetX-this.baseLeft-this.mirrorWidth/2;
 				var mirrorTop = e.offsetY-this.baseTop-this.mirrorHeight/2;
 			
-				var mirrorDiv = "<div class='div1'  style='background:#fff; opacity:0.3;position:absolute;left:"+mirrorLeft+"px;top:"+mirrorTop+"px;width:"+this.mirrorWidth+"px;height:"+this.mirrorHeight+"px;' ></div>";
+				var mirrorDiv = "<div class='div1'  style='cursor:move;background:#fff; opacity:0.3;position:absolute;left:"+mirrorLeft+"px;top:"+mirrorTop+"px;width:"+this.mirrorWidth+"px;height:"+this.mirrorHeight+"px;' ></div>";
 				var t = this;
 				this.mirrorDom = $(mirrorDiv)[0];//根据字符串创建了DOM对象
 				$(this.smallBoxId).append(this.mirrorDom);
